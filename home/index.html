@@ -1,0 +1,1819 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mujeres Vitales | Transformación para mujeres y empresas</title>
+<meta name="description" content="Retiros, talleres, rituales y sesiones 1 a 1 para mujeres, y programas de bienestar para empresas. Acompañamos tu proceso de transformación en Colombia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/web/drone-circulo-mar.jpg" fetchpriority="high">
+<style>
+:root{
+  --marfim:#f8f0e9; --beige:#e0bfa1; --cafe:#3b271b; --cafe2:#4d3524; --cafe3:#2c1d13;
+  --vino:#92293e; --vino-claro:#ab3950; --mostaza:#8d6e23; --caramelo:#e19c54; --cobre:#af7d48;
+  --blanco:#ffffff; --texto:#3b271b; --texto-suave:#6d5644; --texto-claro:#f4e9de; --texto-claro-suave:#d3bfa9;
+  --grad-vino:linear-gradient(135deg,#ab3950 0%,#92293e 100%);
+  --grad-oro:linear-gradient(135deg,#e19c54 0%,#af7d48 52%,#8d6e23 100%);
+  --grad-cafe:linear-gradient(160deg,#4d3524 0%,#3b271b 100%);
+  --sombra-sm:0 8px 26px rgba(59,39,27,.08); --radio:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+@property --angle{syntax:"<angle>";initial-value:0deg;inherits:false}
+@keyframes angleSpin{to{--angle:360deg}}
+@keyframes mqScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes btnGlow{0%{box-shadow:0 12px 30px rgba(146,41,62,.3),0 0 0 0 rgba(225,156,84,.55)}60%{box-shadow:0 12px 30px rgba(146,41,62,.3),0 0 0 14px rgba(225,156,84,0)}100%{box-shadow:0 12px 30px rgba(146,41,62,.3),0 0 0 0 rgba(225,156,84,0)}}
+@keyframes btnShine{0%{transform:translateX(-180%) skewX(-18deg)}40%{transform:translateX(230%) skewX(-18deg)}100%{transform:translateX(230%) skewX(-18deg)}}
+html{scroll-behavior:smooth}
+body{font-family:"Montserrat",sans-serif;color:var(--texto);background:var(--marfim);line-height:1.65;font-weight:300;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:"Montserrat",sans-serif;line-height:1.14;font-weight:800;letter-spacing:-.3px}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+:focus-visible{outline:3px solid var(--caramelo);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.center{text-align:center}
+.maxw{max-width:780px;margin-left:auto;margin-right:auto}
+.sec{padding:96px 0;position:relative}
+.sec h2,.sec-h1{font-size:clamp(28px,4.1vw,48px);line-height:1.12;margin-bottom:16px;text-wrap:balance}
+.sec .lead{font-size:18px;color:var(--texto-suave);font-weight:300;line-height:1.7}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--grad-vino);color:#fff;font-size:11.5px;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:9px 20px;border-radius:50px;box-shadow:0 6px 18px rgba(146,41,62,.26)}
+.eyebrow.oro{background:var(--grad-oro);box-shadow:0 6px 18px rgba(175,125,72,.3)}
+.eyebrow.outline{background:transparent;border:1.5px solid var(--cobre);color:var(--mostaza);box-shadow:none}
+.center .eyebrow{margin:0 auto 20px}
+.todo{display:inline-flex;align-items:center;gap:6px;background:rgba(146,41,62,.1);border:1px dashed rgba(146,41,62,.55);color:var(--vino);font-size:10.5px;font-weight:700;letter-spacing:1.2px;padding:4px 11px;border-radius:6px;text-transform:uppercase;line-height:1.4}
+.todo.claro{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.6);color:#fff}
+.todo.conf{background:rgba(141,110,35,.12);border-color:rgba(141,110,35,.5);color:var(--mostaza)}
+.nota-conf.claro{color:var(--texto-claro-suave);background:rgba(255,255,255,.07);border-left-color:rgba(225,156,84,.55);max-width:620px;margin-left:auto;margin-right:auto;text-align:left}
+a[data-pend]{cursor:help}
+.nota-conf{display:block;margin-top:12px;font-size:12.5px;line-height:1.55;color:var(--mostaza);background:rgba(141,110,35,.07);border-left:12px solid rgba(141,110,35,.45);border-radius:0 8px 8px 0;padding:9px 12px}
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,#ab3950 0%,#92293e 48%,#7a2134 100%);color:#fff;font-weight:600;font-size:15px;letter-spacing:.5px;text-transform:uppercase;padding:18px 34px;border-radius:14px;outline:1.5px solid rgba(225,156,84,.45);outline-offset:4px;box-shadow:0 12px 30px rgba(146,41,62,.3);transition:transform .25s,box-shadow .25s;animation:btnGlow 3.2s ease-out infinite;text-align:center}
+.btn::before{content:"";position:absolute;top:0;left:0;width:60%;height:100%;background:linear-gradient(100deg,transparent 0%,rgba(255,255,255,.45) 50%,transparent 100%);transform:translateX(-180%) skewX(-18deg);animation:btnShine 8s ease-in-out infinite;pointer-events:none}
+.btn:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(146,41,62,.45)}
+.btn.oro{background:var(--grad-oro);outline-color:rgba(255,255,255,.5);box-shadow:0 12px 30px rgba(175,125,72,.32);animation:none}
+.btn.claro{background:linear-gradient(135deg,#ffffff 0%,#f8f0e9 100%);color:var(--vino);outline-color:rgba(255,255,255,.7);animation:none}
+.btn.ghost{background:transparent;color:#fff;outline:none;border:1.5px solid rgba(255,255,255,.55);box-shadow:none;animation:none}
+.btn.ghost:hover{background:rgba(255,255,255,.12)}
+.btn.sm{font-size:13px;padding:14px 26px}
+.link-cta{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;font-weight:600;letter-spacing:.6px;text-transform:uppercase;color:var(--vino);transition:gap .22s,color .22s}
+.link-cta svg{width:15px;height:15px;stroke:currentColor;stroke-width:2.2;fill:none;flex-shrink:0}
+.link-cta:hover{gap:13px;color:var(--cobre)}
+.link-cta.claro{color:var(--caramelo)}
+@media(prefers-reduced-motion:reduce){.btn{animation:none}.btn::before{display:none}}
+.hdiv{position:relative;height:0;z-index:5}
+.hdiv::before{content:"";position:absolute;top:-1px;left:0;height:7px;width:70%;border-radius:0 6px 6px 0;background:linear-gradient(90deg,var(--vino) 6%,rgba(146,41,62,.5) 52%,transparent);filter:drop-shadow(0 3px 8px rgba(146,41,62,.22))}
+.hdiv.r::before{right:0;left:auto;border-radius:6px 0 0 6px;background:linear-gradient(270deg,var(--cobre) 6%,rgba(175,125,72,.5) 52%,transparent)}
+/* barra de separacao hero -> secao 2: 4x a espessura padrao (7px -> 28px) */
+.hdiv--hero::before{height:28px;border-radius:0 14px 14px 0;background:linear-gradient(90deg,var(--vino) 10%,rgba(146,41,62,.55) 58%,transparent);filter:drop-shadow(0 6px 16px rgba(146,41,62,.28))}
+.ph{position:relative;background:repeating-linear-gradient(135deg,rgba(146,41,62,.045) 0 12px,transparent 12px 24px),linear-gradient(150deg,#f2e2d3,#f8f0e9);border:1.5px dashed rgba(146,41,62,.4);border-radius:var(--radio);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;padding:30px 20px;color:var(--texto-suave)}
+.ph-ico{width:52px;height:52px;border-radius:50%;background:rgba(146,41,62,.1);display:flex;align-items:center;justify-content:center}
+.ph-ico svg{width:24px;height:24px;stroke:var(--vino);stroke-width:1.7;fill:none}
+.ph-txt{font-size:13.5px;line-height:1.6;max-width:420px}
+.hero{position:relative;background:var(--blanco);overflow:hidden;--hsplit:52%}
+.hero-view{position:relative;min-height:clamp(560px,82vh,780px)}
+/* r8: o header foi removido do site. Os 104px de topo existiam so para o hero nao
+   comecar debaixo da barra fixa: agora o topo iguala a base e a portada fica centrada. */
+.hslide{position:absolute;top:0;right:0;bottom:0;left:0;opacity:0;visibility:hidden;transition:opacity .7s ease,visibility .7s ease;display:flex;align-items:center;background:var(--blanco);padding:86px 0}
+.hslide.is-active{opacity:1;visibility:visible}
+/* r5: a divisao entre texto e foto deixou de ser diagonal e passou a ser VERTICAL (reta,
+   em pe) e sem fio dourado. A foto nao e mais recortada por clip-path: ela ocupa a faixa
+   a direita de --hsplit, entao o proprio painel ja e o recorte.
+   O lado esquerdo usa var(--blanco) -- o mesmo branco do .heli-card do bloco Que es. */
+.hslide-bg{position:absolute;top:0;right:0;bottom:0;left:var(--hsplit);z-index:0;overflow:hidden}
+.hslide-bg img{width:100%;height:100%;object-fit:cover;object-position:50% 24%;max-width:none;transform:scale(1.06);transition:transform 9s ease-out}
+.hslide.is-active .hslide-bg img{transform:scale(1)}
+.hslide-inner{position:relative;z-index:2;width:100%;max-width:1180px;margin:0 auto;padding:0 24px}
+.hs-box{max-width:min(520px,44%)}
+.hs-kicker{display:inline-flex;align-items:center;gap:9px;font-size:11.5px;font-weight:600;letter-spacing:2.2px;text-transform:uppercase;color:var(--vino);background:linear-gradient(90deg,rgba(225,156,84,.46) 0%,rgba(225,156,84,.2) 46%,rgba(225,156,84,0) 100%);padding:9px 22px 9px 16px;border-radius:6px 50px 50px 6px;margin-bottom:18px}
+.hs-title{font-size:clamp(30px,5.4vw,58px);font-weight:800;color:var(--cafe);line-height:1.06;letter-spacing:-.8px;margin-bottom:16px;text-wrap:balance}
+.hs-sub{font-size:clamp(15px,1.7vw,18.5px);color:var(--texto-suave);font-weight:300;line-height:1.65;max-width:560px;margin-bottom:28px}
+.hs-micro{margin-top:15px;font-size:13.5px;color:var(--mostaza);font-style:italic;font-weight:400}
+.hs-pend{margin-top:16px}
+/* r7: uma seta em cada borda da secao -- a prev sobre o painel claro do texto, a next sobre
+   a foto. Base comum: circulo solido da marca com icone branco, que e o unico tratamento
+   legivel nos dois fundos (icone branco sobre o vinho da 4,9:1). */
+.hero-ctrl{position:absolute;top:50%;transform:translateY(-50%);z-index:6;width:52px;height:52px;border-radius:50%;background:var(--grad-vino);border:1px solid rgba(255,255,255,.4);box-shadow:0 10px 24px rgba(146,41,62,.34);display:flex;align-items:center;justify-content:center;transition:background .22s,transform .22s}
+.hero-ctrl:hover{background:linear-gradient(135deg,#c2495f 0%,#a52f47 100%);transform:translateY(-50%) scale(1.06)}
+.hero-ctrl svg{width:20px;height:20px;stroke:#fff;stroke-width:2.4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+/* r7: a prev deixou a divisao e foi para a lateral esquerda da secao. Sobre o creme o anel
+   branco herdado sumia e a sombra vinho ficava chapada: ela troca por anel vinho e sombra
+   cafe. A next fica sobre a foto e mantem o anel branco, que e o que a separa de uma imagem
+   escura e cheia de textura. */
+.hero-ctrl.prev{left:22px;border-color:rgba(146,41,62,.55);box-shadow:0 8px 20px rgba(59,39,27,.24)}
+/* medido: o circulo vinho sozinho fica em 1,9:1 contra a parte escura da foto da portada 3.
+   O anel branco de 2px resolve nos fundos escuros e o fio cafe por fora resolve nos claros --
+   um dos dois sempre passa de 3:1, entao a seta nunca depende da foto que estiver atras. */
+.hero-ctrl.next{right:22px;border-width:2px;border-color:#fff;box-shadow:0 0 0 1px rgba(44,29,19,.55),0 8px 22px rgba(44,29,19,.42)}
+/* r7: com a seta na borda esquerda, o texto precisa de uma faixa livre. Enquanto o container
+   de 1180px tem margem propria (viewport >= ~1230px) nada muda; abaixo disso ele encosta na
+   lateral e o titulo caia embaixo da seta, entao o padding cresce so o quanto falta para
+   manter o texto a 96px da borda. */
+@media(min-width:821px){.hslide-inner{padding-left:max(24px,calc(96px - max(0px,(100% - 1180px)/2)))}}
+.hero-nav{position:absolute;left:0;right:0;bottom:30px;z-index:6;display:flex;align-items:center;justify-content:center;gap:14px}
+/* r5: pilula clara atras dos dots -- eles cruzam a linha de divisao e precisam de um
+   fundo proprio para nao sumir nem no branco nem na foto. */
+.hero-dots{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.9);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid rgba(146,41,62,.22);border-radius:50px;padding:9px 16px;box-shadow:0 8px 22px rgba(59,39,27,.16)}
+/* r6: sobre o painel claro o traco a 18% sumia -- subido para 52% (3.1:1 contra o branco) */
+.hdot{width:38px;height:5px;border-radius:4px;background:rgba(59,39,27,.52);position:relative;overflow:hidden;transition:background .25s;padding:0}
+.hdot i{position:absolute;top:0;left:0;bottom:0;width:0;background:var(--grad-vino);border-radius:4px;display:block}
+.hdot[aria-selected="true"]{background:rgba(59,39,27,.6)}
+.hdot[aria-selected="true"] i{width:100%;transition:width 7s linear}
+/* r5: entre 821 e 1080 o painel de texto precisa de mais largura antes de empilhar.
+   Precisa vir DEPOIS da regra .hero -- as duas tem a mesma especificidade. */
+@media(min-width:821px) and (max-width:1080px){.hero{--hsplit:57%}}
+@media(prefers-reduced-motion:reduce){.hslide-bg img{transition:none;transform:none}.hdot[aria-selected="true"] i{transition:none;width:100%}
+  .estep{opacity:1;transform:none;transition:none}.emp-steps{--fill:1}.emp-steps::after{transition:none}
+  .vid-facade img,.coach-av img{transition:none}}
+.sec-que{background:var(--marfim)}
+.que-head{max-width:820px;margin:0 auto 54px;text-align:center}
+.que-head .eyebrow{margin-bottom:36px}
+.que-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:0;align-items:center}
+/* o card branco avanca para a esquerda e o video passa por cima dele (efeito flutuante) */
+.vsl-wrap{position:relative;z-index:2}
+.vsl-label{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:14px}
+.vsl-label .vl{font-size:11.5px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--vino)}
+.vsl{position:relative;aspect-ratio:16/9;border-radius:20px;overflow:hidden;background:var(--cafe3);box-shadow:0 30px 64px rgba(59,39,27,.4),0 6px 18px rgba(59,39,27,.2)}
+.vsl::before{content:"";position:absolute;top:0;right:0;bottom:0;left:0;border-radius:20px;padding:2.5px;background:conic-gradient(from var(--angle),rgba(225,156,84,0) 0deg,rgba(225,156,84,0) 200deg,var(--mostaza) 268deg,var(--cobre) 300deg,#fff 322deg,var(--caramelo) 344deg,rgba(225,156,84,0) 360deg);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask-composite:exclude;animation:angleSpin 6s linear infinite;pointer-events:none;z-index:4}
+.vsl img{width:100%;height:100%;object-fit:cover;object-position:50% 34%;opacity:.55}
+.vsl-ov{position:absolute;top:0;right:0;bottom:0;left:0;z-index:3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:linear-gradient(180deg,rgba(44,29,19,.28),rgba(44,29,19,.62))}
+.vsl-play{width:78px;height:78px;border-radius:50%;background:rgba(248,240,233,.94);display:flex;align-items:center;justify-content:center;box-shadow:0 12px 32px rgba(0,0,0,.42)}
+.vsl-play svg{width:28px;height:28px;fill:var(--vino);margin-left:5px}
+.vsl-badge{position:absolute;top:16px;left:16px;z-index:5}
+.vsl-cap{margin-top:16px;font-size:14.5px;color:var(--texto-suave);line-height:1.65}
+.heli-card{background:var(--blanco);border:1px solid rgba(146,41,62,.16);border-radius:22px;padding:30px;box-shadow:var(--sombra-sm)}
+/* o card avanca 58px para a esquerda e o texto recua para nao passar por baixo do video */
+.heli-card{position:relative;z-index:1;margin-left:-58px;padding-left:92px}
+.heli-top{display:flex;gap:20px;align-items:center;margin-bottom:22px}
+.heli-foto{position:relative;width:132px;flex-shrink:0}
+.heli-foto img{width:132px;height:164px;object-fit:cover;object-position:50% 22%;border-radius:16px;box-shadow:0 14px 32px rgba(59,39,27,.24)}
+.heli-foto .todo{position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);white-space:normal;text-align:center;line-height:1.35;max-width:150px;padding:5px 9px;background:var(--marfim)}
+.heli-id .ante{font-size:11.5px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--cobre);display:block;margin-bottom:6px}
+.heli-id h3{font-size:clamp(24px,3vw,32px);color:var(--cafe);margin-bottom:4px}
+.heli-id .rol{font-size:15px;font-style:italic;color:var(--vino);font-weight:500}
+.heli-card p.hp{font-size:14.8px;color:var(--texto-suave);line-height:1.72;margin-bottom:14px}
+.heli-card p.hp b{font-weight:700;color:var(--cafe)}
+.heli-creds{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 16px;margin:18px 0 22px;padding-top:18px;border-top:1px solid rgba(146,41,62,.14)}
+.heli-creds li{display:flex;align-items:flex-start;gap:8px;font-size:13.5px;color:var(--texto);font-weight:400;line-height:1.45}
+.heli-creds li svg{width:15px;height:15px;stroke:var(--cobre);stroke-width:2.2;fill:none;flex-shrink:0;margin-top:4px}
+.heli-ctas{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.cert-band{position:relative;margin-top:74px;padding:38px 0 10px;border-top:none;overflow:hidden}
+/* r4: sem filete no topo. O rotulo abre a faixa sozinho. */
+.cert-band .cb-label{display:block;text-align:center;font-size:11.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--texto-suave);margin-bottom:28px}
+/* os logos ja vem em silhueta grafite (assets/web/logos/grafito): sem caixa e sem filtro por cima */
+.cert-band .mq-track>*{margin-right:66px}
+.cert-band .mq-track img{height:86px;opacity:.82;filter:none}
+.cert-band .mq-track img:hover{opacity:1;filter:none}
+.mq{position:relative;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent)}
+.mq-track{display:flex;align-items:center;width:max-content;animation:mqScroll 46s linear infinite}
+.mq-track>*{margin-right:56px;flex-shrink:0}
+.mq-track img{height:58px;width:auto;object-fit:contain;opacity:.72;filter:grayscale(.35);transition:opacity .25s,filter .25s}
+.mq-track img:hover{opacity:1;filter:none}
+.mq:hover .mq-track{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.mq-track{animation:none;flex-wrap:wrap;justify-content:center;width:auto;gap:30px}.mq-track>*{margin-right:0 !important}.mq{-webkit-mask-image:none;mask-image:none}.vsl::before{animation:none}}
+/* r4: a secao termina no bege da curva concava que abre "Nuestros programas" */
+.sec-google{background:linear-gradient(180deg,#f2e5d7,#eddcc8)}
+/* Carrossel proprio de resenas (no WordPress vira o widget oficial de Google) */
+.gr{margin-top:42px}
+.gr-head{display:flex;align-items:center;justify-content:center;gap:30px;flex-wrap:wrap;max-width:640px;margin:0 auto;background:var(--blanco);border:1px solid rgba(146,41,62,.13);border-radius:20px;padding:22px 32px;box-shadow:var(--sombra-sm)}
+.gr-score{display:flex;flex-direction:column;align-items:center;gap:8px}
+.gr-word{font-size:23px;font-weight:800;letter-spacing:1.6px;color:var(--cafe);line-height:1}
+.gr-stars{display:inline-flex;gap:3px;line-height:0}
+.gr-stars svg{width:19px;height:19px;fill:#e8a33d}
+.gr-stars.sm svg{width:15px;height:15px}
+.gr-base{font-size:13px;color:var(--texto-suave)}
+.gr-base b{color:var(--cafe);font-weight:700}
+.gr-glogo{height:27px;width:auto;flex-shrink:0}
+.gr-rail{position:relative;margin-top:30px}
+.gr-track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:8px 4px 22px;scrollbar-width:none;overscroll-behavior-x:contain}
+.gr-track::-webkit-scrollbar{display:none}
+/* r4: fade nas laterais -- os cards somem suavemente na borda da pista.
+   O JS zera a variavel da ponta em que nao ha mais para onde rolar, para o
+   primeiro e o ultimo card nao nascerem meio apagados. */
+.gr-track{--fadeL:0px;--fadeR:64px;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 var(--fadeL),#000 calc(100% - var(--fadeR)),transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 var(--fadeL),#000 calc(100% - var(--fadeR)),transparent 100%)}
+.gr-item{flex:0 0 calc((100% - 40px) / 3);scroll-snap-align:start;display:flex}
+.gr-card{position:relative;display:flex;flex-direction:column;width:100%;background:var(--blanco);border:1px solid rgba(146,41,62,.13);border-radius:18px;padding:22px 22px 20px;box-shadow:var(--sombra-sm);transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
+.gr-card:hover{transform:translateY(-4px);box-shadow:0 20px 42px rgba(59,39,27,.14);border-color:rgba(175,125,72,.4)}
+.gr-top{display:flex;align-items:center;gap:12px}
+.gr-av{width:44px;height:44px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;color:#fff;letter-spacing:.5px;background:var(--c,#92293e)}
+.gr-who{flex:1;min-width:0}
+.gr-who b{display:block;font-size:14.4px;font-weight:700;color:var(--cafe);line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gr-when{display:block;font-size:12px;color:var(--texto-suave);line-height:1.4}
+.gr-src{flex-shrink:0;line-height:0}
+.gr-src svg{width:19px;height:19px}
+.gr-card .gr-stars{margin:14px 0 8px}
+.gr-txt{font-size:14px;line-height:1.66;color:var(--texto-suave);display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
+.gr-card.is-open .gr-txt{display:block;overflow:visible;-webkit-line-clamp:unset}
+.gr-more{align-self:flex-start;margin-top:9px;font-size:12.6px;font-weight:700;letter-spacing:.5px;color:var(--vino);border-bottom:1px solid rgba(146,41,62,.35);padding-bottom:1px;transition:color .2s,border-color .2s}
+.gr-more:hover{color:var(--cobre);border-color:rgba(175,125,72,.55)}
+.gr-ver{display:inline-flex;align-items:center;gap:6px;margin-top:auto;padding-top:16px;font-size:11.4px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;color:var(--mostaza)}
+.gr-ver svg{width:14px;height:14px;fill:none;stroke:var(--mostaza);stroke-width:2.3;flex-shrink:0}
+.gr-arrows{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:2px}
+.gr-arrow{width:46px;height:46px;border-radius:50%;background:var(--blanco);border:1px solid rgba(146,41,62,.2);display:flex;align-items:center;justify-content:center;box-shadow:var(--sombra-sm);transition:transform .2s,background .2s}
+.gr-arrow:hover{transform:scale(1.07);background:var(--marfim)}
+.gr-arrow[disabled]{opacity:.34;cursor:default;box-shadow:none}
+.gr-arrow[disabled]:hover{transform:none;background:var(--blanco)}
+.gr-arrow svg{width:18px;height:18px;stroke:var(--vino);stroke-width:2.4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.gr-hint{text-align:center;font-size:12.5px;letter-spacing:1.4px;text-transform:uppercase;color:var(--texto-suave);margin-top:12px}
+.gg-cta{margin-top:26px;text-align:center}
+.sec-prog{background:var(--marfim);padding-bottom:0;padding-top:118px}
+/* r4: mesma divisoria curva do bloco de contacto, nas cores desta transicao --
+   o preenchimento leva o bege em que .sec-google termina (#eddcc8) e cai sobre o marfim.
+   Como o delta entre os dois tons e baixo, um traco em gradiente desenha a propria curva. */
+.cc-divider--prog .cc-curve path.cc-fill{fill:#eddcc8}
+.linea-head{max-width:960px;margin:0 auto 34px;display:flex;align-items:flex-start;gap:18px}
+.linea-num{flex-shrink:0;width:54px;height:54px;border-radius:16px;background:var(--grad-vino);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;letter-spacing:1px;box-shadow:0 10px 24px rgba(146,41,62,.3)}
+.linea-head h3{font-size:clamp(24px,3.2vw,34px);color:var(--cafe);margin-bottom:6px;line-height:1.16}
+.linea-head p{font-size:15.5px;color:var(--texto-suave);line-height:1.6}
+.prog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
+.prog-card{position:relative;display:flex;flex-direction:column;background:var(--blanco);border:1px solid rgba(146,41,62,.16);border-radius:20px;overflow:hidden;box-shadow:var(--sombra-sm);transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease,opacity .35s ease,filter .35s ease}
+.prog-card:hover{transform:translateY(-6px);box-shadow:0 22px 46px rgba(59,39,27,.16);border-color:rgba(175,125,72,.45)}
+/* borda superior-esquerda em gradiente via mask (ref: Katia .who-card) */
+/* traco curto no topo, alinhado a esquerda (ref: Katia .ben-card::after) */
+.prog-card::before{content:"";position:absolute;top:0;left:26px;right:auto;bottom:auto;width:64px;height:4px;border-radius:0 0 4px 4px;background:linear-gradient(90deg,var(--cobre) 0%,var(--vino) 100%);box-shadow:0 0 10px rgba(146,41,62,.28);pointer-events:none;z-index:4;transition:width .35s ease}
+.prog-card:hover::before{width:84px}
+/* hover: o card sob o cursor fica em destaque e os irmaos desfocam (ref: Katia .who-grid) */
+@media(hover:hover){
+  .prog-grid:hover .prog-card{opacity:.5;filter:blur(2.5px)}
+  .prog-grid:hover .prog-card:hover{opacity:1;filter:blur(0);transform:translateY(-6px);box-shadow:0 22px 50px rgba(59,39,27,.22)}
+}
+/* r4: area de imagem com metade da altura anterior (16/10 -> 16/5) */
+.prog-media{position:relative;aspect-ratio:16/5;overflow:hidden;background:var(--cafe3)}
+.prog-media img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.prog-card:hover .prog-media img{transform:scale(1.06)}
+/* r5: tarjeta que agrupa dos programas -> las dos fotos reales, lado a lado.
+   El gap de 2px deja ver el fondo cobre como filete divisorio. */
+.prog-media--duo{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr;gap:2px;background:rgba(175,125,72,.6)}
+.prog-media--duo img{min-width:0;min-height:0}
+/* r5: o card alto do bento recebe uma faixa de imagem baixa (~84px): sobe o recorte */
+.prog-media--sup img{object-position:50% 12%}
+.prog-media--foto::after{content:"";position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(180deg,transparent 42%,rgba(44,29,19,.58) 100%);pointer-events:none}
+.prog-tag{position:absolute;left:14px;bottom:12px;z-index:2;font-size:10.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#fff;background:rgba(146,41,62,.86);padding:6px 12px;border-radius:50px}
+.prog-media .todo{position:absolute;top:12px;left:12px;z-index:3}
+.prog-media--pend{position:relative;background:repeating-linear-gradient(135deg,rgba(146,41,62,.05) 0 12px,transparent 12px 24px),linear-gradient(150deg,#f2e2d3,#eadbca);display:flex;align-items:center;justify-content:center}
+.prog-media--pend .pico{width:60px;height:60px;border-radius:50%;background:rgba(146,41,62,.1);display:flex;align-items:center;justify-content:center}
+.prog-media--pend .pico svg{width:26px;height:26px;stroke:var(--vino);stroke-width:1.7;fill:none}
+.prog-body{flex:1;display:flex;flex-direction:column;padding:24px 24px 26px}
+.prog-body h4{font-size:20px;color:var(--cafe);line-height:1.2;margin-bottom:10px}
+.prog-body p{font-size:14.2px;color:var(--texto-suave);line-height:1.66;margin-bottom:14px}
+.prog-chips{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin:0 0 16px}
+.prog-chips li{font-size:11.8px;color:var(--mostaza);background:rgba(141,110,35,.09);border:1px solid rgba(141,110,35,.24);border-radius:50px;padding:4px 11px;line-height:1.4}
+.prog-body .link-cta{margin-top:auto;align-self:flex-start;padding-top:16px}
+.prog-card.is-pend{border-style:dashed;border-color:rgba(146,41,62,.4);background:linear-gradient(160deg,#fdf8f3,#f8f0e9)}
+/* r4: bento IDENTICO ao do Katia (lp-v2, .ben-bento / .ben-card:nth-child), medido no
+   navegador em 1440px: 4 colunas de 271px, 3 linhas minmax(160px,auto), gap 16px.
+   Cards 1,2,4,6 largos (2 colunas); 3 e 5 altos (1 coluna cruzando 2 linhas):
+   [1 1][2 2] / [3][4 4][5] / [3][6 6][5] */
+@media(min-width:1081px){
+  .prog-grid{grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(3,minmax(160px,auto));gap:16px}
+  .prog-grid>.prog-card:nth-child(1){grid-column:1/3;grid-row:1}
+  .prog-grid>.prog-card:nth-child(2){grid-column:3/5;grid-row:1}
+  .prog-grid>.prog-card:nth-child(3){grid-column:1;grid-row:2/4}
+  .prog-grid>.prog-card:nth-child(4){grid-column:2/4;grid-row:2}
+  .prog-grid>.prog-card:nth-child(5){grid-column:4;grid-row:2/4}
+  .prog-grid>.prog-card:nth-child(6){grid-column:2/4;grid-row:3}
+}
+/* Sem overflow:hidden aqui de proposito: quebraria o position:sticky do .emp-head.
+   O video ja fica contido pelo overflow do .emp-media. */
+.emp-band{position:relative;background:var(--cafe3);color:var(--texto-claro);margin-top:96px;padding:88px 0 96px;isolation:isolate}
+.emp-band::before{content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,transparent,var(--caramelo),var(--cobre),transparent);z-index:4}
+/* camada 0: video de fundo (ambiente, nunca protagonista) */
+.emp-media{position:absolute;top:0;right:0;bottom:0;left:0;z-index:0;overflow:hidden;pointer-events:none;background:var(--cafe3) url(assets/web/video/bienestar-corporativo-poster.jpg) center/cover no-repeat}
+.emp-video{width:100%;height:100%;object-fit:cover;object-position:center;display:block;pointer-events:none}
+/* camada 1: veil forte e uniforme - o texto ocupa as duas colunas */
+.emp-veil{position:absolute;top:0;right:0;bottom:0;left:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(44,29,19,.92) 0%,rgba(44,29,19,.66) 24%,rgba(44,29,19,.66) 74%,rgba(44,29,19,.94) 100%),linear-gradient(100deg,rgba(44,29,19,.8) 0%,rgba(44,29,19,.5) 54%,rgba(44,29,19,.66) 100%)}
+.emp-band .wrap{position:relative;z-index:2}
+.emp-band .linea-head h3{color:#fff}
+.emp-band .linea-head p{color:var(--texto-claro-suave)}
+.emp-band .linea-num{background:var(--grad-oro);box-shadow:0 10px 24px rgba(175,125,72,.32)}
+/* titulo fixo a esquerda, cards na timeline a direita (ref: Katia .uso-split / .steps) */
+.emp-split{display:grid;grid-template-columns:minmax(0,.84fr) minmax(0,1.16fr);gap:52px;align-items:start;margin-top:12px}
+.emp-head{position:sticky;top:112px;min-width:0}
+.emp-steps{display:grid;gap:0;position:relative;min-width:0}
+.emp-steps::before{content:"";position:absolute;left:27px;top:27px;bottom:27px;width:2px;border-radius:2px;background:rgba(225,156,84,.26)}
+.emp-steps::after{content:"";position:absolute;left:27px;top:27px;width:2px;border-radius:2px;height:calc((100% - 54px) * var(--fill,0));background:linear-gradient(180deg,var(--caramelo) 0%,var(--cobre) 100%);box-shadow:0 0 10px rgba(225,156,84,.55);z-index:1;will-change:height}
+.estep{display:grid;grid-template-columns:56px 1fr;gap:22px;padding:0 0 28px;position:relative;opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.estep.show{opacity:1;transform:none}
+.estep:last-child{padding-bottom:0}
+.estep-num{width:56px;height:56px;border-radius:50%;background:var(--grad-oro);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;letter-spacing:.6px;color:#fff;flex-shrink:0;z-index:2;box-shadow:0 6px 20px rgba(175,125,72,.5),inset 0 0 0 2px rgba(255,255,255,.3)}
+.emp-band .prog-card{background:rgba(248,240,233,.08);border-color:rgba(225,156,84,.26)}
+.emp-band .prog-card::before{background:linear-gradient(90deg,var(--caramelo) 0%,var(--cobre) 100%);box-shadow:0 0 10px rgba(225,156,84,.4)}
+.emp-band .prog-card:hover{border-color:rgba(225,156,84,.6);box-shadow:0 22px 46px rgba(0,0,0,.4)}
+.emp-band .prog-body h4{color:#fff}
+.emp-band .prog-body p{color:var(--texto-claro-suave)}
+/* logos dos aliados: mesmo tratamento da faixa de certificacoes da Heli (.cert-band) --
+   sem card/fundo, logos maiores e todos na mesma cor neutra. Como o fundo aqui e o video
+   escuro, usamos a variante clara do grafite: brightness(0) inverte a silhueta para um
+   cinza claro uniforme (nao branco puro), legivel sobre o veu. */
+.emp-logos{position:relative;margin-top:34px;padding:22px 0 6px;background:none;border:none;border-top:none;border-radius:0;box-shadow:none}
+.emp-logos::before{content:"";position:absolute;top:0;left:0;right:0;height:1.5px;pointer-events:none;background:linear-gradient(90deg,rgba(225,156,84,0) 0%,rgba(225,156,84,.5) 30%,rgba(225,156,84,.5) 70%,rgba(225,156,84,0) 100%)}
+.emp-logos .el-label{display:flex;align-items:center;justify-content:center;text-align:center;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.emp-logos .el-label span.t{font-size:11.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--texto-claro-suave)}
+.emp-logos .mq-track>*{margin-right:46px}
+.emp-logos .mq-track img{height:58px;width:auto;max-width:170px;object-fit:contain;opacity:.9;filter:brightness(0) invert(.84)}
+.emp-logos .mq-track img:hover{opacity:1;filter:brightness(0) invert(1)}
+/* bloco de fecho de Empresas: card mais largo, hierarquia tipografica em duas vozes */
+/* r4: fundo em degrade que perde opacidade ate zero. A borda acompanha o mesmo
+   sentido por mascara -- borda solida com fundo transparente desenharia uma caixa. */
+.emp-close{position:relative;max-width:1000px;margin:58px auto 0;text-align:center;background:linear-gradient(160deg,rgba(248,240,233,.2) 0%,rgba(248,240,233,.115) 30%,rgba(248,240,233,.042) 64%,rgba(248,240,233,0) 100%);border:none;border-radius:26px;padding:46px 48px 42px;box-shadow:0 26px 58px rgba(0,0,0,.26);overflow:hidden}
+.emp-close::after{content:"";position:absolute;top:0;right:0;bottom:0;left:0;border:1px solid rgba(225,156,84,.46);border-radius:inherit;pointer-events:none;-webkit-mask-image:linear-gradient(160deg,#000 0%,rgba(0,0,0,.5) 46%,transparent 90%);mask-image:linear-gradient(160deg,#000 0%,rgba(0,0,0,.5) 46%,transparent 90%)}
+.emp-close::before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:132px;height:4px;border-radius:0 0 4px 4px;background:var(--grad-oro);box-shadow:0 0 12px rgba(225,156,84,.45);pointer-events:none}
+.emp-close p{font-size:clamp(17.5px,2.1vw,24px);color:var(--texto-claro);font-weight:300;font-style:normal;line-height:1.42;letter-spacing:-.2px;max-width:640px;margin:0 auto 26px;text-wrap:balance}
+.emp-close p .ec-hi{display:block;margin-bottom:8px;font-size:1.28em;font-weight:700;letter-spacing:-.5px;line-height:1.12;color:var(--caramelo);background:var(--grad-oro);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.sec-video{background:var(--marfim);overflow:hidden}
+.vid-rail{position:relative;margin-top:46px}
+.vid-track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4px 22px;scrollbar-width:none}
+.vid-track::-webkit-scrollbar{display:none}
+.vid-item{flex:0 0 clamp(212px,24vw,286px);scroll-snap-align:center}
+.vid-card{position:relative;aspect-ratio:9/16;border-radius:18px;overflow:hidden;background:linear-gradient(160deg,#4d3524,#2c1d13);border:1px solid rgba(225,156,84,.3);box-shadow:var(--sombra-sm)}
+/* facade: so a miniatura ate o clique; o iframe do YouTube so entra depois */
+.vid-facade{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;display:block;padding:0;border:none;background:none}
+.vid-facade img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.vid-facade::after{content:"";position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(180deg,rgba(44,29,19,.18) 0%,transparent 32%,rgba(44,29,19,.5) 70%,rgba(44,29,19,.9) 100%);pointer-events:none}
+.vid-facade:hover img{transform:scale(1.05)}
+.vid-card iframe{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;border:0}
+/* r4: o facade so sai de cena quando o player confirma que esta reproduzindo */
+.vid-card.is-live .vid-facade,.vid-card.is-live .vtag{display:none}
+/* r4: video que o dono bloqueou para sites externos -- fica o facade e o clique abre o YouTube */
+.vid-card .vid-ext-tag{position:absolute;top:12px;left:12px;z-index:3;font-size:10.5px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#fff;background:rgba(146,41,62,.92);padding:6px 11px;border-radius:50px;pointer-events:none}
+.vid-card .vp{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;width:62px;height:62px;border-radius:50%;background:rgba(248,240,233,.94);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(0,0,0,.5);transition:transform .25s ease,background .25s ease}
+.vid-facade:hover .vp{transform:translate(-50%,-50%) scale(1.09);background:#fff}
+.vid-card .vp svg{width:21px;height:21px;fill:var(--vino);margin-left:3px}
+.vid-card .vtag{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:14px 14px 15px;font-size:12px;color:var(--texto-claro-suave);text-align:left;line-height:1.45;pointer-events:none}
+.vid-card .vtag b{display:block;color:#fff;font-weight:600;font-size:13.5px;margin-bottom:3px}
+.vid-card .vtag .todo{margin-top:7px}
+.vid-arrows{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:6px}
+.vid-arrow{width:46px;height:46px;border-radius:50%;background:var(--blanco);border:1px solid rgba(146,41,62,.2);display:flex;align-items:center;justify-content:center;box-shadow:var(--sombra-sm);transition:transform .2s,background .2s}
+.vid-arrow:hover{transform:scale(1.07);background:var(--marfim)}
+.vid-arrow[disabled]{opacity:.34;cursor:default;box-shadow:none}
+.vid-arrow[disabled]:hover{transform:none;background:var(--blanco)}
+.vid-arrow svg{width:18px;height:18px;stroke:var(--vino);stroke-width:2.4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.vid-hint{text-align:center;font-size:12.5px;letter-spacing:1.4px;text-transform:uppercase;color:var(--texto-suave);margin-top:14px}
+.vid-cta{text-align:center;margin-top:34px}
+.sec-coaches{background:linear-gradient(180deg,#f8f0e9,#efdfcd)}
+/* Cards geometricos no estilo Ketox (.mod-item), com CIRCULO no lugar do hexagono:
+   a foto e irma do card (nunca dentro de um wrapper com overflow), recortada em circulo
+   perfeito, e o card traz um entalhe circular no topo para receber a metade de baixo.
+   Assim nao sobra o retangulo bege do arquivo por tras nem corte do rosto. */
+.coach-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:26px 18px;margin-top:52px}
+.coach{--av:clamp(96px,10.6vw,132px);position:relative;display:flex;flex-direction:column;align-items:center;transition:transform .28s ease,filter .28s ease;filter:drop-shadow(0 10px 20px rgba(59,39,27,.15))}
+.coach:hover{transform:translateY(-5px);filter:drop-shadow(0 18px 30px rgba(59,39,27,.22))}
+.coach-av{position:relative;z-index:2;width:var(--av);height:var(--av);flex:0 0 auto}
+.coach-av img{width:100%;height:100%;object-fit:cover;object-position:50% 50%;border-radius:50%;-webkit-clip-path:circle(49.6% at 50% 50%);clip-path:circle(49.6% at 50% 50%);transition:transform .45s ease}
+.coach:hover .coach-av img{transform:scale(1.04)}
+.coach-card{position:relative;z-index:1;width:100%;flex:1;margin-top:calc(var(--av) * -.5);padding:calc(var(--av) * .58) 12px 18px;text-align:center;background:var(--blanco);border-radius:18px;
+  -webkit-mask-image:radial-gradient(circle calc(var(--av) * .5 + 8px) at 50% 0,transparent 98.5%,#000 99.5%);
+  mask-image:radial-gradient(circle calc(var(--av) * .5 + 8px) at 50% 0,transparent 98.5%,#000 99.5%);
+  -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}
+.coach-card .cn{font-size:15px;font-weight:700;color:var(--cafe);line-height:1.25;margin-bottom:5px}
+.coach-card .ce{font-size:12.2px;color:var(--texto-suave);line-height:1.5}
+.coach-card .todo{margin-top:10px;white-space:normal;line-height:1.35}
+.coach-card .todo.cav{font-size:8.8px;letter-spacing:.5px;padding:3px 8px;border-radius:5px}
+.coach.destaque{grid-column:span 2;--av:clamp(120px,13vw,158px)}
+.coach.destaque .coach-card{padding-left:24px;padding-right:24px;padding-bottom:22px}
+.coach.destaque .cn{font-size:19px}
+.coach-cta{text-align:center;margin-top:44px}
+/* r4: sem overflow:hidden -- era ele que cortava o circulo da curva ao meio.
+   O circulo esta centrado em top:0 e precisa transbordar para a secao de cima (ref: Ketox). */
+.sec-final{position:relative;background:var(--cafe3);color:var(--texto-claro);text-align:center;overflow:visible;padding-top:130px}
+/* r5: foto del acervo como fondo del cierre. Opacidad plena al centro y desvanecimiento
+   radial hacia los bordes (la mascara termina en .08, no en 0: el borde queda apenas
+   perceptible, como pidio Elton). Orden de capas: foto (z0) -> veu+tintes (z1) -> card (z2). */
+.fin-media{position:absolute;top:0;right:0;bottom:0;left:0;z-index:0;overflow:hidden;pointer-events:none}
+.fin-media img{width:100%;height:100%;object-fit:cover;object-position:50% 48%;
+  -webkit-mask-image:radial-gradient(ellipse 74% 78% at 50% 48%,#000 0%,rgba(0,0,0,.94) 30%,rgba(0,0,0,.56) 58%,rgba(0,0,0,.2) 82%,rgba(0,0,0,.08) 100%);
+  mask-image:radial-gradient(ellipse 74% 78% at 50% 48%,#000 0%,rgba(0,0,0,.94) 30%,rgba(0,0,0,.56) 58%,rgba(0,0,0,.2) 82%,rgba(0,0,0,.08) 100%)}
+.sec-final::before{content:"";position:absolute;top:0;right:0;bottom:0;left:0;z-index:1;background:radial-gradient(circle at 50% 40%,rgba(146,41,62,.34),transparent 62%),radial-gradient(circle at 88% 88%,rgba(175,125,72,.24),transparent 58%),linear-gradient(180deg,rgba(38,24,15,.84) 0%,rgba(38,24,15,.46) 26%,rgba(38,24,15,.44) 72%,rgba(38,24,15,.86) 100%);pointer-events:none}
+/* divisoria curva concava com circulo + chevron (skill curva-concava, ref: Ketox .bs-divider).
+   O path leva a cor da secao de cima: .sec-coaches termina em #efdfcd. */
+.cc-divider{position:absolute;top:0;left:0;width:100%;line-height:0;z-index:3;pointer-events:none}
+.cc-divider svg.cc-curve{display:block;width:100%;height:46px}
+/* sem box-shadow difuso: era ele que desenhava o filete fino atras do icone.
+   O circulo agora carrega o vinho da marca e resolve o contraste sozinho. */
+.cc-divider .cc-circle{position:absolute;top:0;left:50%;transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;background:var(--grad-vino);display:flex;align-items:center;justify-content:center;box-shadow:0 11px 20px -7px rgba(74,16,30,.72);z-index:4}
+.cc-divider .cc-circle svg{width:22px;height:22px;stroke:#fff;stroke-width:2.6;fill:none}
+/* secao > CARD > conteudo */
+.final-card{position:relative;z-index:2;backdrop-filter:blur(7px) saturate(.9) brightness(.82);-webkit-backdrop-filter:blur(7px) saturate(.9) brightness(.82);max-width:960px;margin:0 auto;background:linear-gradient(160deg,rgba(248,240,233,.1) 0%,rgba(248,240,233,.035) 100%);border:1px solid rgba(225,156,84,.28);border-radius:30px;padding:54px 48px 48px;box-shadow:0 34px 80px rgba(0,0,0,.42);overflow:hidden}
+.final-card::before{content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,transparent,var(--caramelo),var(--cobre),transparent);pointer-events:none}
+.final-inner{position:relative;z-index:1;max-width:880px;margin:0 auto}
+.final-inner h2{color:#fff;font-size:clamp(25px,4vw,42px);margin-bottom:20px}
+.final-inner .lead{color:var(--texto-claro-suave);max-width:700px;margin:0 auto 32px}
+.final-btns{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
+.final-micro{margin-top:22px;font-size:13px;color:var(--caramelo);font-style:italic}
+footer{position:relative;background:var(--cafe);color:var(--texto-claro-suave);padding:62px 0 34px;font-size:13.5px}
+footer::before{content:"";position:absolute;top:0;left:0;width:100%;height:1px;background:rgba(225,156,84,.3)}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px}
+.f-brand img{height:70px;width:auto;margin-bottom:16px}
+.f-brand p{font-size:13.5px;line-height:1.7;max-width:290px}
+.f-col h5{font-size:11.5px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--caramelo);margin-bottom:14px}
+.f-col a,.f-col span.fi{display:block;padding:5px 0;font-size:13.5px;color:var(--texto-claro-suave);transition:color .2s}
+.f-col a:hover{color:#fff}
+.f-bot{margin-top:44px;padding-top:22px;border-top:1px solid rgba(225,156,84,.2);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;font-size:12.5px;color:#a58d76}
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:150;display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#ab3950,#92293e);color:#fff;font-size:13px;font-weight:600;padding:14px 20px;border-radius:50px;box-shadow:0 14px 34px rgba(146,41,62,.44);transition:transform .22s}
+.wa-float:hover{transform:translateY(-3px)}
+.wa-float svg{width:20px;height:20px;fill:#fff;flex-shrink:0}
+.sr-hidden{opacity:0;transform:translateY(26px);transition:opacity .65s ease,transform .65s ease}
+.sr-hidden.sr-visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.sr-hidden,.sr-hidden.sr-visible{opacity:1;transform:none;transition:none}*{scroll-behavior:auto}}
+@media(max-width:1080px){.prog-grid{grid-template-columns:repeat(2,1fr)}.coach-grid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:960px){
+  .que-grid{grid-template-columns:1fr;gap:44px}
+  .heli-card{margin-left:0;padding-left:30px}
+  .vsl-wrap{z-index:auto}
+  .gr-item{flex:0 0 calc((100% - 20px) / 2)}
+  .f-grid{grid-template-columns:1fr 1fr;gap:30px}
+}
+@media(max-width:820px){
+  .sec{padding:76px 0}
+  /* r6: no empilhado a divisao continua reta (horizontal, sem inclinacao), mas o hero
+     passa a ser fluxo real: as tres portadas dividem a mesma celula de grid, entao a
+     altura e a da portada mais alta e o texto nunca entra na faixa da foto. Antes o
+     titulo da portada 2 subia por cima do painel escuro e ficava ilegivel. */
+  .hero{--hband:300px}
+  .hero-view{display:grid;min-height:0}
+  .hslide{position:relative;grid-area:1/1;display:flex;flex-direction:column;padding:0 0 84px}
+  .hslide-bg{position:relative;top:auto;right:auto;bottom:auto;left:auto;width:100%;height:var(--hband);flex:0 0 var(--hband)}
+  /* o texto centra no espaco que sobra: a celula tem a altura da portada mais alta */
+  .hslide-inner{flex:1;display:flex;flex-direction:column;justify-content:center;padding:32px 24px 0}
+  .hs-box{max-width:none}
+  /* r7: a foto da portada 2 e quase quadrada; na faixa deitada o recorte de 24% cortava os
+     rostos em cima. 8% desce a roda de cadeiras para o meio da faixa. */
+  .hslide-bg--taller img{object-position:50% 8%}
+  /* r6: setas centradas na faixa de foto, que agora tem altura fixa */
+  .hero-ctrl{width:44px;height:44px;top:calc(var(--hband) / 2)}
+  /* r7: no empilhado a prev tambem cai sobre a foto, entao larga o anel vinho (feito para o
+     painel claro) e usa o mesmo tratamento da next -- medido 1,8:1 com o anel vinho. */
+  .hero-ctrl.prev{left:12px;border-width:2px;border-color:#fff;box-shadow:0 0 0 1px rgba(44,29,19,.55),0 8px 22px rgba(44,29,19,.42)}
+  .hero-ctrl.next{right:12px}
+  .emp-band{margin-top:76px;padding:70px 0 78px}
+  .emp-split{grid-template-columns:minmax(0,1fr);gap:28px;margin-top:0}
+  .emp-head{position:static}
+  .coach-grid{grid-template-columns:repeat(3,1fr)}
+  .coach.destaque{grid-column:span 3}
+  .emp-close{padding:38px 30px 34px}
+  .final-card{padding:44px 32px 40px;border-radius:26px}
+}
+@media(max-width:640px){
+  .wrap{padding:0 18px}
+  .hslide-inner{padding:0 18px}
+  .sec{padding:44px 0}
+  .sec .lead{font-size:16px;line-height:1.62}
+  .que-head{margin-bottom:34px}
+  .hero{--hband:224px}
+  .hslide{padding:0 0 76px}
+  .hslide-inner{padding:26px 18px 0}
+  .hs-title{font-size:clamp(26px,7.6vw,38px)}
+  .hs-sub{font-size:15px;margin-bottom:22px}
+  .hero-ctrl{display:none}
+  .hero-nav{bottom:24px}
+  .hdot{width:30px}
+  .btn{width:100%;font-size:14px;padding:15px 20px}
+  .btn.sm{width:auto}
+  .nota-conf{font-size:11.8px;line-height:1.5;padding:8px 10px;margin-top:10px}
+  .prog-grid{grid-template-columns:1fr;max-width:440px;margin:30px auto 0;gap:18px}
+  .prog-media{aspect-ratio:32/9}
+  .prog-media--pend{aspect-ratio:32/9}
+  .prog-media--pend .pico{width:48px;height:48px}
+  .prog-media--pend .pico svg{width:21px;height:21px}
+  .prog-body{padding:18px 18px 20px}
+  .prog-body h4{font-size:18px;margin-bottom:8px}
+  .prog-body p{font-size:13.4px;line-height:1.55;margin-bottom:11px}
+  .prog-chips{margin-bottom:12px}
+  .prog-chips li{font-size:11.2px;padding:3px 9px}
+  .prog-body .link-cta{padding-top:12px}
+  .linea-head{flex-direction:column;gap:12px;margin-bottom:24px}
+  .linea-num{width:46px;height:46px;border-radius:14px}
+  .linea-head p{font-size:14.5px}
+  .que-grid{gap:34px}
+  .vsl-cap{font-size:13.6px;margin-top:12px}
+  .heli-card{padding:20px}
+  .heli-top{flex-direction:column;align-items:flex-start;gap:22px;margin-bottom:18px}
+  .heli-foto,.heli-foto img{width:100%}
+  .heli-foto img{height:168px;object-position:50% 18%}
+  .heli-foto .todo{max-width:none;left:14px;transform:none}
+  .heli-card p.hp{font-size:14px;line-height:1.65;margin-bottom:12px}
+  .heli-creds{grid-template-columns:1fr;margin:14px 0 18px;padding-top:14px;gap:6px}
+  .heli-ctas{flex-direction:column;align-items:stretch}
+  .heli-ctas .link-cta{justify-content:center}
+  .cert-band{margin-top:38px;padding:20px 0 22px}
+  .emp-band{margin-top:56px;padding:56px 0 60px}
+  .emp-split{gap:22px}
+  /* a area de imagem cai pela metade: o icone nao cabe junto do badge */
+  .estep{grid-template-columns:44px 1fr;gap:14px;padding-bottom:22px}
+  .estep-num{width:44px;height:44px;font-size:13px}
+  .emp-steps::before{left:21px;top:22px;bottom:22px}
+  .emp-steps::after{left:21px;top:22px;height:calc((100% - 44px) * var(--fill,0))}
+  .emp-logos{margin-top:26px;padding:18px 0 4px}
+  .emp-logos .mq-track>*{margin-right:34px}
+  .emp-logos .mq-track img{height:44px;max-width:132px}
+  .cert-band{margin-top:48px;padding:28px 0 6px}
+  .cert-band .mq-track img{height:58px}
+  .emp-close{margin-top:36px;padding:26px 20px}
+  .emp-close p{margin-bottom:18px}
+  .gr{margin-top:26px}
+  .gr-head{gap:16px;padding:20px 18px;border-radius:16px}
+  .gr-item{flex:0 0 86%}
+  .gr-card{padding:18px 18px 16px}
+  .gr-txt{font-size:13.4px;-webkit-line-clamp:7}
+  .emp-close{margin-top:38px;padding:30px 20px 26px;border-radius:20px}
+  .emp-close::before{width:96px}
+  .final-card{padding:32px 20px 30px;border-radius:22px}
+  .vid-rail{margin-top:28px}
+  .vid-card .vtag{padding:11px 11px 12px;font-size:11.5px}
+  .vid-card .vp{width:52px;height:52px}
+  .sec-final{padding-top:96px}
+  /* r5: no mobile o card ocupa quase toda a largura -- a mascara precisa ser mais larga
+     e mais baixa para a foto ainda aparecer em cima, embaixo e nas laterais do card. */
+  .fin-media img{object-position:50% 42%;
+    -webkit-mask-image:radial-gradient(ellipse 132% 64% at 50% 42%,#000 0%,rgba(0,0,0,.95) 34%,rgba(0,0,0,.62) 64%,rgba(0,0,0,.26) 86%,rgba(0,0,0,.1) 100%);
+    mask-image:radial-gradient(ellipse 132% 64% at 50% 42%,#000 0%,rgba(0,0,0,.95) 34%,rgba(0,0,0,.62) 64%,rgba(0,0,0,.26) 86%,rgba(0,0,0,.1) 100%)}
+  .cc-divider svg.cc-curve{height:32px}
+  .cc-divider .cc-circle{width:46px;height:46px}
+  .cc-divider .cc-circle svg{width:18px;height:18px}
+  .vid-item{flex:0 0 clamp(196px,58vw,240px)}
+  .vid-cta{margin-top:26px}
+  .coach-grid{grid-template-columns:repeat(2,1fr);gap:22px 12px;margin-top:34px}
+  .coach{--av:clamp(84px,23vw,110px)}
+  .coach.destaque{grid-column:span 2;--av:clamp(104px,30vw,136px)}
+  .coach.destaque .coach-card{padding-left:16px;padding-right:16px;padding-bottom:18px}
+  .coach.destaque .cn{font-size:17px}
+  .coach-card{padding-left:8px;padding-right:8px;padding-bottom:13px}
+  .coach-card .cn{font-size:13px;margin-bottom:3px}
+  .coach-card .ce{font-size:11px;line-height:1.34}
+  .coach-card .todo{margin-top:8px}
+  .coach-cta{margin-top:28px}
+  .final-btns{gap:12px}
+  .final-inner .lead{margin-bottom:24px}
+  .f-grid{grid-template-columns:1fr 1fr;gap:22px 20px}
+  .f-brand{grid-column:span 2}
+  .f-brand img{height:58px;margin-bottom:12px}
+  .f-col a,.f-col span.fi{padding:3px 0;font-size:13px}
+  footer{padding:38px 0 24px}
+  .f-bot{margin-top:24px;padding-top:18px;justify-content:center;text-align:center}
+  .mq-track>*{margin-right:36px}
+  .mq-track img{height:44px}
+  .wa-float{right:14px;bottom:14px;padding:13px 16px;font-size:12.5px}
+}
+@media(max-width:400px){
+  .hs-kicker{font-size:10.5px;letter-spacing:1.6px;padding:8px 14px}
+  .hs-title{font-size:clamp(23px,8vw,32px)}
+  .coach-grid{gap:18px 10px}
+  .coach-card .cn{font-size:12.4px}
+  .coach-card .ce{font-size:10.5px}
+  .vid-item{flex:0 0 68%}
+}
+</style>
+</head>
+<body>
+
+<section class="hero" id="hero" aria-roledescription="carrusel" aria-label="Soluciones de Mujeres Vitales">
+  <div class="hero-view" id="heroView">
+
+    <article class="hslide is-active" role="group" aria-roledescription="portada" aria-label="1 de 3: Retiros">
+      <div class="hslide-bg">
+        <img src="assets/web/drone-circulo-mar.jpg" alt="Vista a&eacute;rea de un c&iacute;rculo de mujeres tomadas de la mano dentro del mar turquesa del Caribe colombiano" fetchpriority="high">
+      </div>
+      <div class="hslide-inner">
+        <div class="hs-box">
+          <span class="hs-kicker">Retiros para mujeres &middot; Caribe colombiano</span>
+          <h2 class="hs-title">Cuatro d&iacute;as para volver a ti</h2>
+          <p class="hs-sub">Una experiencia vivencial de 4 d&iacute;as y 3 noches en Palomino, entre el mar y la Sierra Nevada, para conectar contigo misma.</p>
+          <a class="btn" href="#personas">Conoce nuestros retiros</a>
+          <p class="hs-micro">Volver a Vivir y Volver a Brillar.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="hslide" role="group" aria-roledescription="portada" aria-label="2 de 3: Empresas, Movimiento Vital">
+      <div class="hslide-bg hslide-bg--taller">
+        <img src="assets/web/taller-circulo-sillas-jardin.jpg" alt="Mujeres sentadas en c&iacute;rculo en sillas de jard&iacute;n, con material impreso en las manos, escuchando a la facilitadora durante un taller al aire libre junto a una enramada de palma" loading="lazy">
+      </div>
+      <div class="hslide-inner">
+        <div class="hs-box">
+          <span class="hs-kicker">Movimiento Vital &middot; Programas para empresas</span>
+          <h2 class="hs-title">Bienestar que transforma la cultura de tu equipo</h2>
+          <p class="hs-sub">Talleres y charlas de bienestar, liderazgo, motivaci&oacute;n y comunicaci&oacute;n para tus colaboradoras y colaboradores.</p>
+          <a class="btn" href="#empresas">Conoce nuestros programas para empresas</a>
+          <p class="hs-micro">Servicios a la medida en temas, duraci&oacute;n y tama&ntilde;o de grupo.</p>
+          <p class="hs-pend"><span class="todo">Pendiente &middot; fotograf&iacute;a corporativa</span></p>
+        </div>
+      </div>
+    </article>
+
+    <article class="hslide" role="group" aria-roledescription="portada" aria-label="3 de 3: Sesiones 1 a 1 con Heli Quijano">
+      <div class="hslide-bg">
+        <img src="assets/web/sesion-individual-cuencos.jpg" alt="Facilitadora vestida de negro acompa&ntilde;ando a una participante acostada, con cuencos de cristal en primer plano durante una sesi&oacute;n individual" loading="lazy">
+      </div>
+      <div class="hslide-inner">
+        <div class="hs-box">
+          <span class="hs-kicker">Sesiones 1 a 1 con Heli Quijano</span>
+          <h2 class="hs-title">Un acompa&ntilde;amiento dise&ntilde;ado solo para ti</h2>
+          <p class="hs-sub">Coaching ontol&oacute;gico, eneagrama y breathwork en sesiones individuales para avanzar donde hoy te sientes detenida.</p>
+          <a class="btn" href="#contacto">Agenda una sesi&oacute;n</a>
+          <p class="hs-micro">Inicia hoy tu entrevista gratis.</p>
+        </div>
+      </div>
+    </article>
+
+    <button class="hero-ctrl prev" id="heroPrev" aria-label="Portada anterior">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 5 8 12 15 19"/></svg>
+    </button>
+    <button class="hero-ctrl next" id="heroNext" aria-label="Portada siguiente">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 5 16 12 9 19"/></svg>
+    </button>
+
+    <div class="hero-nav">
+      <div class="hero-dots" id="heroDots" role="tablist" aria-label="Elegir portada">
+        <button class="hdot" role="tab" aria-selected="true" aria-label="Portada 1: Retiros"><i></i></button>
+        <button class="hdot" role="tab" aria-selected="false" aria-label="Portada 2: Empresas"><i></i></button>
+        <button class="hdot" role="tab" aria-selected="false" aria-label="Portada 3: Sesiones 1 a 1"><i></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hdiv hdiv--hero"></div>
+
+<section class="sec sec-que" id="que-es">
+  <div class="wrap">
+    <div class="que-head sr-hidden">
+      <span class="eyebrow">Nosotros</span>
+      <h1 class="sec-h1">&iquest;Qu&eacute; es Mujeres Vitales?</h1>
+      <p class="lead">Somos una empresa de transformaci&oacute;n humana y bienestar integral enfocada 100% en las mujeres, con soluciones para personas y para organizaciones.</p>
+    </div>
+
+    <div class="que-grid">
+      <div class="vsl-wrap sr-hidden">
+        <div class="vsl-label">
+          <span class="vl">Video &middot; Conoce Mujeres Vitales en 2 minutos</span>
+          <span class="todo conf">A confirmar &middot; duraci&oacute;n</span>
+        </div>
+        <div class="vsl">
+          <img src="assets/web/heli-charla-jardin.jpg" alt="Heli Quijano, creadora de Mujeres Vitales, presentando el movimiento." loading="lazy">
+          <div class="vsl-ov">
+            <span class="vsl-play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="7,4 20,12 7,20"/></svg></span>
+            <span class="todo claro">Pendiente &middot; video VSL</span>
+          </div>
+          <span class="vsl-badge todo claro">Espacio reservado 16:9</span>
+        </div>
+        <p class="vsl-cap">Heli Quijano te cuenta qu&eacute; es Mujeres Vitales y c&oacute;mo acompa&ntilde;amos procesos de transformaci&oacute;n.</p>
+        <span class="nota-conf">Guion del VSL a cargo de Helga. Aqu&iacute; queda reservado el espacio del video en el layout.</span>
+      </div>
+
+      <div class="heli-card sr-hidden" id="heli">
+        <div class="heli-top">
+          <div class="heli-foto">
+            <img src="assets/web/heli-hablando-palmeras.jpg" alt="Heli Quijano de pie con micr&oacute;fono diadema, kaftan y sombrero, con palmeras y el mar al fondo" loading="lazy">
+            <span class="todo">Pendiente &middot; retrato profesional</span>
+          </div>
+          <div class="heli-id">
+            <span class="ante">Qui&eacute;n gu&iacute;a este movimiento</span>
+            <h3>Heli Quijano</h3>
+            <p class="rol">Creadora de Mujeres Vitales</p>
+          </div>
+        </div>
+
+        <p class="hp">Mujeres Vitales naci&oacute; con un &uacute;nico fin: <b>llevar sanaci&oacute;n a las mujeres</b>. Trabajamos <b>las heridas m&aacute;s grandes que enfrentamos a nivel mental, emocional y corporal</b>.</p>
+        <p class="hp">Heli es <b>Coach Ontol&oacute;gica, Eneagramista, Danzaterapeuta y Facilitadora de Breathwork</b>. Es tambi&eacute;n <b>la creadora de la Teor&iacute;a de la Vitalidad</b>, un enfoque propio sobre c&oacute;mo el bienestar f&iacute;sico, emocional y espiritual se interrelacionan para potenciar la energ&iacute;a vital.</p>
+        <p class="hp">Acompa&ntilde;a retiros, talleres, c&iacute;rculos, rituales y sesiones individuales, siempre desde un mismo lugar: <b>un espacio seguro donde cada mujer puede mirarse con honestidad</b> y <b>volver a s&iacute; misma</b>.</p>
+
+        <ul class="heli-creds">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="4 12 10 18 20 6"/></svg>Coach Ontol&oacute;gica</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="4 12 10 18 20 6"/></svg>Eneagramista</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="4 12 10 18 20 6"/></svg>Danzaterapeuta</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="4 12 10 18 20 6"/></svg>Facilitadora de Breathwork</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="4 12 10 18 20 6"/></svg>Creadora de la Teor&iacute;a de la Vitalidad</li>
+        </ul>
+
+        <div class="heli-ctas">
+          <a class="btn sm" href="https://www.mujeresvitales.com/teoria-de-la-vitalidad/" target="_blank" rel="noopener">Conoce la Teor&iacute;a de la Vitalidad</a>
+          <a class="link-cta" href="#contacto">Agenda una sesi&oacute;n con Heli
+            <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cert-band sr-hidden">
+      <span class="cb-label">Formaci&oacute;n y certificaciones de Heli</span>
+      <div class="mq">
+        <div class="mq-track" id="certTrack">
+          <img src="assets/web/logos/grafito/cert/icf-logo-final.png" alt="Certificaci&oacute;n International Coaching Federation &mdash; Heli Quijano" loading="lazy">
+          <img src="assets/web/logos/grafito/cert/logo-newfield-network.png" alt="Certificaci&oacute;n Newfield Network &mdash; Heli Quijano" loading="lazy">
+          <img src="assets/web/logos/grafito/cert/logo-de-los-andes.png" alt="Certificaci&oacute;n Universidad de los Andes &mdash; Heli Quijano" loading="lazy">
+          <img src="assets/web/logos/grafito/cert/purdue-schol-of-management.png" alt="Certificaci&oacute;n Purdue School of Management &mdash; Heli Quijano" loading="lazy">
+          <img src="assets/web/logos/grafito/cert/logo-eneagramarte.png" alt="Certificaci&oacute;n Eneagramarte &mdash; Heli Quijano" loading="lazy">
+          <img src="assets/web/logos/grafito/cert/international-dance-council.png" alt="Certificaci&oacute;n International Dance Council &mdash; Heli Quijano" loading="lazy">
+          <img src="assets/web/logos/grafito/cert/logo-onebreath.png" alt="Certificaci&oacute;n OneBreath &mdash; Heli Quijano" loading="lazy">
+          <img src="assets/web/logos/grafito/cert/nbcch-logo.png" alt="Certificaci&oacute;n National Board for Certified Clinical Hypnotherapists &mdash; Heli Quijano" loading="lazy">
+          <img src="assets/web/logos/grafito/cert/colegio-de-terapeutas-hipnosis.png" alt="Certificaci&oacute;n Colegio de Terapeutas de Hipnosis de Sanaci&oacute;n &mdash; Heli Quijano" loading="lazy">
+          <img src="assets/web/logos/grafito/cert/logo-camila-healing.png" alt="Certificaci&oacute;n Camila Healing &mdash; Heli Quijano" loading="lazy">
+          <img src="assets/web/logos/grafito/cert/logolaurablack-molt-petit.png" alt="Certificaci&oacute;n Laura Black &mdash; Heli Quijano" loading="lazy">
+        </div>
+      </div>
+    <p class="center wrap" style="margin-top:20px"><span class="todo conf">A confirmar &middot; lista y nombre exacto de cada aval</span></p>
+  </div>
+</section>
+
+<div class="hdiv r"></div>
+
+<section class="sec sec-google" id="resenas">
+  <div class="wrap">
+    <div class="center maxw sr-hidden">
+      <span class="eyebrow outline">Prueba social verificada</span>
+      <h2>Lo que dicen nuestras Mujeres Vitales</h2>
+      <p class="lead">Calificaci&oacute;n EXCELENTE en rese&ntilde;as verificadas de Google. Cada testimonio es real y verificable en el perfil de Mujeres Vitales.</p>
+    </div>
+
+    <div class="gr sr-hidden">
+      <div class="gr-head">
+        <div class="gr-score">
+          <strong class="gr-word">EXCELENTE</strong>
+          <span class="gr-stars" role="img" aria-label="5 de 5 estrellas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg></span>
+          <span class="gr-base">A base de <b>124 rese&ntilde;as</b></span>
+        </div>
+        <img class="gr-glogo" src="assets/web/logos/google-logo.svg" alt="Google" width="150" height="25" loading="lazy">
+      </div>
+
+      <div class="gr-rail">
+        <div class="gr-track" id="grTrack" tabindex="0" role="region" aria-label="Carrusel de rese&ntilde;as de Google">
+      <article class="gr-item">
+        <div class="gr-card">
+          <div class="gr-top">
+            <span class="gr-av" style="--c:#92293e" aria-hidden="true">N</span>
+            <span class="gr-who"><b>Neiva Garcia</b><span class="gr-when" data-date="2025-12-30">hace 7 meses</span></span>
+            <span class="gr-src" title="Publicado en Google"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.28-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.55 10.78l7.98-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span>
+          </div>
+          <span class="gr-stars sm" role="img" aria-label="5 de 5 estrellas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg></span>
+          <p class="gr-txt">Me encant&#243; la sesi&#243;n con Heli, el eneagrama es una herramienta q me ayud&#243; a reconocer aspectos de mi personalidad, me dio claridad en cuanto a lo q debo trabajar y direcci&#243;n. Esto muy agradecida.</p>
+          <span class="gr-ver"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><polyline points="8 12.3 10.9 15.2 16 9.4"/></svg> Verificado</span>
+        </div>
+      </article>
+      <article class="gr-item">
+        <div class="gr-card">
+          <div class="gr-top">
+            <span class="gr-av" style="--c:#af7d48" aria-hidden="true">P</span>
+            <span class="gr-who"><b>Patricia Chaves</b><span class="gr-when" data-date="2025-11-24">hace 8 meses</span></span>
+            <span class="gr-src" title="Publicado en Google"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.28-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.55 10.78l7.98-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span>
+          </div>
+          <span class="gr-stars sm" role="img" aria-label="5 de 5 estrellas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg></span>
+          <p class="gr-txt">Un espacio maravilloso, y un regalo para uno mismo AMOR PROPIO &#128591;&#127996;&#129392;</p>
+          <span class="gr-ver"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><polyline points="8 12.3 10.9 15.2 16 9.4"/></svg> Verificado</span>
+        </div>
+      </article>
+      <article class="gr-item">
+        <div class="gr-card">
+          <div class="gr-top">
+            <span class="gr-av" style="--c:#8d6e23" aria-hidden="true">A</span>
+            <span class="gr-who"><b>Ang&#233;lica Molina</b><span class="gr-when" data-date="2025-11-24">hace 8 meses</span></span>
+            <span class="gr-src" title="Publicado en Google"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.28-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.55 10.78l7.98-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span>
+          </div>
+          <span class="gr-stars sm" role="img" aria-label="5 de 5 estrellas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg></span>
+          <p class="gr-txt">Participar en el retiro Mujeres Vitales fue una experiencia que realmente super&#243; mis expectativas. Me encant&#243; de principio a fin y lo recomiendo con el coraz&#243;n. Este espacio me permiti&#243; auto-descubrirme, reconocer mi fuerza interior y ser consciente de lo poderosa que soy y de todo lo que tengo para ofrecerle al mundo. Aprend&#237; a activar mi energ&#237;a femenina y a equilibrarla con la masculina, algo que me ha dado claridad, bienestar y una nueva forma de habitar mi vida. El paisaje natural, hermoso y perfecto, cre&#243; el entorno ideal para conectar, soltar y vivir plenamente cada momento del proceso. Heli nuestra coach, comparti&#243; toda la informaci&#243;n de manera amorosa, aut&#233;ntica y generosa. Sus herramientas experienciales fueron fundamentales para integrar el conocimiento desde el sentir, no solo desde la mente. Adem&#225;s, se esmer&#243; en hacernos sentir c&#243;modas, sostenidas y seguras en cada actividad. Me llevo aprendizajes profundos, una energ&#237;a renovada y la certeza de que este tipo de espacios transforman. Sin duda, volver&#237;a a vivirlo.</p>
+          <span class="gr-ver"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><polyline points="8 12.3 10.9 15.2 16 9.4"/></svg> Verificado</span>
+        </div>
+      </article>
+      <article class="gr-item">
+        <div class="gr-card">
+          <div class="gr-top">
+            <span class="gr-av" style="--c:#4d3524" aria-hidden="true">A</span>
+            <span class="gr-who"><b>alejandra mahecha</b><span class="gr-when" data-date="2025-11-18">hace 8 meses</span></span>
+            <span class="gr-src" title="Publicado en Google"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.28-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.55 10.78l7.98-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span>
+          </div>
+          <span class="gr-stars sm" role="img" aria-label="5 de 5 estrellas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg></span>
+          <p class="gr-txt">Fue una experiencia bonita que cada quien vive y experimenta a su manera personal pero que se complementa con las experiencias y las vivencias con otras mujeres excepcionales cada una con una historia con muchas cosas lindas por compartir. Un espacio para ser empaticas, reconocer, admirar, inspirarse para sentirse especial con cada detalle en la bienvenida, en habitaciones, en las actividades , los detalles de patrocinadores en productos de bienestar etc. me quedo con un sentimiento de gratitud por estos 4 d&#237;as de salir de mi rutina para reflexionar y pensar en mi.</p>
+          <span class="gr-ver"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><polyline points="8 12.3 10.9 15.2 16 9.4"/></svg> Verificado</span>
+        </div>
+      </article>
+      <article class="gr-item">
+        <div class="gr-card">
+          <div class="gr-top">
+            <span class="gr-av" style="--c:#ab3950" aria-hidden="true">A</span>
+            <span class="gr-who"><b>Alexandra Gomez</b><span class="gr-when" data-date="2025-11-13">hace 8 meses</span></span>
+            <span class="gr-src" title="Publicado en Google"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.28-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.55 10.78l7.98-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span>
+          </div>
+          <span class="gr-stars sm" role="img" aria-label="5 de 5 estrellas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg></span>
+          <p class="gr-txt">Una vivencia que toca el alma, que mueve muchas emociones, aprendiendo a sanar , soltar , a empoderarme y ver la vida con m&#225;s sentido y gratitud. Gracias totales</p>
+          <span class="gr-ver"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><polyline points="8 12.3 10.9 15.2 16 9.4"/></svg> Verificado</span>
+        </div>
+      </article>
+      <article class="gr-item">
+        <div class="gr-card">
+          <div class="gr-top">
+            <span class="gr-av" style="--c:#7a2134" aria-hidden="true">Y</span>
+            <span class="gr-who"><b>yeimi herrera gordillo</b><span class="gr-when" data-date="2025-11-06">hace 9 meses</span></span>
+            <span class="gr-src" title="Publicado en Google"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.28-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.55 10.78l7.98-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span>
+          </div>
+          <span class="gr-stars sm" role="img" aria-label="5 de 5 estrellas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg></span>
+          <p class="gr-txt">Tuvimos una sesi&#243;n de hipnosis , con resultados muy positivos e impactantes para mi proceso de desarrollo personal. El acompa&#241;amiento de Heli durante la sesi&#243;n fue muy significante y valioso. Efectivamente el cuerpo habla desde el inconsciente mostr&#225;ndonos y revelandonos nuestros dolores mas profundos a sanar desde la emoci&#243;n y las sensaciones.</p>
+          <span class="gr-ver"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><polyline points="8 12.3 10.9 15.2 16 9.4"/></svg> Verificado</span>
+        </div>
+      </article>
+      <article class="gr-item">
+        <div class="gr-card">
+          <div class="gr-top">
+            <span class="gr-av" style="--c:#5c4632" aria-hidden="true">M</span>
+            <span class="gr-who"><b>Maria Claudia D&#237;az Vargas</b><span class="gr-when" data-date="2025-10-31">hace 9 meses</span></span>
+            <span class="gr-src" title="Publicado en Google"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.28-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.55 10.78l7.98-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span>
+          </div>
+          <span class="gr-stars sm" role="img" aria-label="5 de 5 estrellas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg></span>
+          <p class="gr-txt">Si busco entre las palabras que pudieran expresar mi experiencia ser&#237;an: Magia en forma de luz para inspirar. Un momento en el que te enfrentas a tu luz y a tu sombra, pero gracias a ella&#8230; a Heli poco a poco con cada palabra, esas luces y sombras las convierte en herramientas y te las entrega en un empaque muy especial, para continuar haciendo el trabajo de construir poco a poco mi ser aut&#233;ntico&#8230; pues es vital&#8230; comience a vivir.. gracias heli gracias por tu luz que seguir&#225; iluminando a millones.. gracias por existir&#8230;</p>
+          <span class="gr-ver"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><polyline points="8 12.3 10.9 15.2 16 9.4"/></svg> Verificado</span>
+        </div>
+      </article>
+      <article class="gr-item">
+        <div class="gr-card">
+          <div class="gr-top">
+            <span class="gr-av" style="--c:#92293e" aria-hidden="true">A</span>
+            <span class="gr-who"><b>Adriana Quijano</b><span class="gr-when" data-date="2025-10-30">hace 9 meses</span></span>
+            <span class="gr-src" title="Publicado en Google"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.28-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.55 10.78l7.98-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span>
+          </div>
+          <span class="gr-stars sm" role="img" aria-label="5 de 5 estrellas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg></span>
+          <p class="gr-txt">Fue una experiencia muy enriquecedora y de ense&#241;anzas para ver de otra forma y con empat&#237;a a nuestra madre</p>
+          <span class="gr-ver"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><polyline points="8 12.3 10.9 15.2 16 9.4"/></svg> Verificado</span>
+        </div>
+      </article>
+      <article class="gr-item">
+        <div class="gr-card">
+          <div class="gr-top">
+            <span class="gr-av" style="--c:#af7d48" aria-hidden="true">M</span>
+            <span class="gr-who"><b>Maryi Andrea Rodr&#237;guez Ortiz</b><span class="gr-when" data-date="2025-10-30">hace 9 meses</span></span>
+            <span class="gr-src" title="Publicado en Google"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.28-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.55 10.78l7.98-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span>
+          </div>
+          <span class="gr-stars sm" role="img" aria-label="5 de 5 estrellas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.88 6.49.94-4.7 4.58 1.11 6.46L12 17.4l-5.8 3.06 1.1-6.46-4.69-4.58 6.49-.94z"/></svg></span>
+          <p class="gr-txt">Fue un d&#237;a sanador, de mucha conexi&#243;n y reconocimiento de mis heridas maternas, as&#237; como del verdadero sentido y poder del instinto maternal y el linaje femenino.</p>
+          <span class="gr-ver"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><polyline points="8 12.3 10.9 15.2 16 9.4"/></svg> Verificado</span>
+        </div>
+      </article>
+        </div>
+        <div class="gr-arrows">
+          <button class="gr-arrow" id="grPrev" type="button" aria-label="Rese&ntilde;as anteriores">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 5 8 12 15 19"/></svg>
+          </button>
+          <button class="gr-arrow" id="grNext" type="button" aria-label="Rese&ntilde;as siguientes">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 5 16 12 9 19"/></svg>
+          </button>
+        </div>
+        <p class="gr-hint">Desliza para ver m&aacute;s rese&ntilde;as</p>
+      </div>
+
+    </div>
+
+    <div class="gg-cta sr-hidden">
+      <a class="link-cta" href="#" data-pend="1" title="Enlace pendiente &middot; p&aacute;gina a&uacute;n no definida en el rediseno">Ver todas las rese&ntilde;as
+        <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+      </a>
+      <p style="margin-top:12px"><span class="todo conf">Pendiente &middot; enlace al perfil de Google</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-prog" id="programas">
+  <div class="cc-divider cc-divider--prog" aria-hidden="true">
+    <svg class="cc-curve" viewBox="0 0 1440 46" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="ccProgLinea" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#af7d48" stop-opacity="0"/>
+          <stop offset=".3" stop-color="#af7d48" stop-opacity=".9"/>
+          <stop offset=".7" stop-color="#92293e" stop-opacity=".9"/>
+          <stop offset="1" stop-color="#92293e" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <path class="cc-fill" d="M0,0 L600,0 C660,0 690,46 720,46 C750,46 780,0 840,0 L1440,0 L1440,0 L0,0 Z" fill="#eddcc8"/>
+      <path d="M0,0 L600,0 C660,0 690,46 720,46 C750,46 780,0 840,0 L1440,0" fill="none" stroke="url(#ccProgLinea)" stroke-width="2.2" vector-effect="non-scaling-stroke"/>
+    </svg>
+    <span class="cc-circle">
+      <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 10 12 16 18 10"/></svg>
+    </span>
+  </div>
+  <div class="wrap">
+    <div class="center maxw sr-hidden">
+      <span class="eyebrow">Nuestros programas</span>
+      <h2>Un camino para cada momento de tu vida</h2>
+      <p class="lead">Acompa&ntilde;amos procesos de transformaci&oacute;n en distintos formatos: retiros, talleres, rituales, sesiones individuales y programas para organizaciones.</p>
+    </div>
+  </div>
+
+  <div class="wrap" id="personas" style="margin-top:66px">
+    <div class="linea-head sr-hidden">
+      <span class="linea-num" aria-hidden="true">01</span>
+      <div>
+        <h3>Para personas</h3>
+        <p>Procesos de transformaci&oacute;n personal, bienestar emocional y reconexi&oacute;n contigo misma.</p>
+      </div>
+    </div>
+
+    <div class="prog-grid">
+      <article class="prog-card sr-hidden">
+        <div class="prog-media prog-media--foto prog-media--duo">
+          <img src="assets/web/programas/retiro-volver-a-vivir-duo.jpg" alt="C&iacute;rculo nocturno del retiro Volver a Vivir: mujeres vestidas de blanco sentadas sobre esteras en la playa, bajo palmeras con luces, escuchando a la facilitadora" loading="lazy">
+          <img src="assets/web/programas/retiro-volver-a-brillar-duo.jpg" alt="Participantes del retiro Volver a Brillar abrazadas de espaldas dentro del mar, frente a las monta&ntilde;as de la Sierra Nevada" loading="lazy">
+          <span class="prog-tag">Retiro</span>
+        </div>
+        <div class="prog-body">
+          <h4>Retiro Vivir y Brillar</h4>
+          <p>Cuatro d&iacute;as y tres noches en el Caribe colombiano, entre el mar y la Sierra Nevada, para sanar, reconectar y despertar tu potencial femenino. Incluye alojamiento, alimentaci&oacute;n, yoga, meditaci&oacute;n, c&iacute;rculos de poder femenino y talleres vivenciales.</p>
+          <span class="nota-conf">A confirmar: hoy son dos retiros distintos (Volver a Vivir &middot; Palomino&ndash;Tayrona y Volver a Brillar &middot; Palomino&ndash;Sierra Nevada). Definir si va una tarjeta unificada o dos.</span>
+          <a class="link-cta" href="https://www.mujeresvitales.com/retiro-experiencia-vital-tayrona/" target="_blank" rel="noopener">Conoce el retiro
+            <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="prog-card sr-hidden">
+        <div class="prog-media prog-media--foto prog-media--duo">
+          <img src="assets/web/programas/taller-heridas-parentales-duo.jpg" alt="Taller de Sanaci&oacute;n de las Heridas Parentales: mujeres de pie formando un c&iacute;rculo en el patio empedrado de una casa campestre" loading="lazy">
+          <img src="assets/web/programas/taller-nina-interior-duo.jpg" alt="Taller de Sanaci&oacute;n de la Ni&ntilde;a Interior: dos mujeres sentadas sobre el c&eacute;sped conversando junto a cuencos de cristal" loading="lazy">
+          <span class="prog-tag">Talleres</span>
+        </div>
+        <div class="prog-body">
+          <h4>Taller Parentales y Ni&ntilde;a Interior</h4>
+          <p>Talleres presenciales de un d&iacute;a en Bogot&aacute; para sanar el v&iacute;nculo con tu madre y tu padre, y reconciliarte con la ni&ntilde;a que a&uacute;n vive en ti. Un espacio seguro de perd&oacute;n, conciencia y reconexi&oacute;n.</p>
+          <ul class="prog-chips"><li>Sanando el Origen</li><li>Sanando la Ni&ntilde;a Interior</li></ul>
+          <span class="nota-conf">A confirmar: &iquest;tarjeta agrupada o una por taller? Y la graf&iacute;a definitiva (el sitio usa &laquo;parentales&raquo;; el brief escribe &laquo;paternales&raquo;).</span>
+          <a class="link-cta" href="https://www.mujeresvitales.com/talleres-charlas-para-mujeres/" target="_blank" rel="noopener">Ver los talleres
+            <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="prog-card sr-hidden">
+        <div class="prog-media prog-media--foto prog-media--sup">
+          <img src="assets/web/programas/rituales-blessing-way.jpg" alt="Ritual The Blessing Way: tres mujeres vestidas de blanco, sentadas y tomadas de la mano alrededor de una mandala de flores, frente a un ventanal" loading="lazy">
+          <span class="prog-tag">Rituales</span>
+        </div>
+        <div class="prog-body">
+          <h4>Rituales The Blessing Way</h4>
+          <p>Ceremonias sagradas para honrar los momentos m&aacute;s importantes de tu vida: cumplea&ntilde;os, despedidas de soltera y baby showers. Un c&iacute;rculo de mujeres con meditaci&oacute;n, intenciones y actividades simb&oacute;licas.</p>
+          <ul class="prog-chips">
+            <li>Vuelta Solar Sagrada &mdash; Cumplea&ntilde;os</li>
+            <li>Camino de la Diosa &mdash; Despedida de soltera</li>
+            <li>Bendici&oacute;n de la Vida Nueva &mdash; Baby shower</li>
+          </ul>
+          <a class="link-cta" href="https://www.mujeresvitales.com/rituales-blessing-way/" target="_blank" rel="noopener">Conoce los rituales
+            <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="prog-card is-pend sr-hidden">
+        <div class="prog-media prog-media--pend">
+          <span class="pico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l2.5 5.2 5.5.8-4 4 .9 5.6L12 16l-4.9 2.6.9-5.6-4-4 5.5-.8z"/></svg></span>
+          <span class="todo">Pendiente &middot; contenido</span>
+        </div>
+        <div class="prog-body">
+          <h4>Mentor&iacute;a Mujer Vital</h4>
+          <p>Descripci&oacute;n pendiente: el programa no existe en el sitio actual y no hay material del que extraer texto.</p>
+          <span class="nota-conf">Falta del cliente: a qui&eacute;n va dirigido, formato, duraci&oacute;n y qu&eacute; incluye.</span>
+          <a class="link-cta" href="#contacto">Quiero saber m&aacute;s
+            <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="prog-card is-pend sr-hidden">
+        <div class="prog-media prog-media--pend">
+          <span class="pico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><polyline points="8.5 13.5 7 21 12 18.5 17 21 15.5 13.5"/></svg></span>
+          <span class="todo">Pendiente &middot; contenido</span>
+        </div>
+        <div class="prog-body">
+          <h4>Certificaci&oacute;n Mentora Mujer Vital</h4>
+          <p>Descripci&oacute;n pendiente: el programa de formaci&oacute;n no existe en el sitio actual.</p>
+          <span class="nota-conf">Falta del cliente: qu&eacute; habilita el certificado, requisitos, duraci&oacute;n y modalidad.</span>
+          <a class="link-cta" href="#contacto">Quiero saber m&aacute;s
+            <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="prog-card sr-hidden">
+        <div class="prog-media prog-media--foto">
+          <img src="assets/web/sound-healing-cuenco-individual.jpg" alt="Facilitadora aplicando un cuenco de cristal sobre una mujer acostada en una sesi&oacute;n individual de sound healing" loading="lazy">
+          <span class="prog-tag">Sesiones 1:1</span>
+        </div>
+        <div class="prog-body">
+          <h4>Programas de Sanaci&oacute;n 1:1</h4>
+          <p>Procesos individuales de acompa&ntilde;amiento con herramientas de autoconocimiento y sanaci&oacute;n profunda: coaching ontol&oacute;gico, eneagrama personalizado y breathwork. Empiezas con una entrevista gratuita.</p>
+          <ul class="prog-chips">
+            <li>Coaching Personalizado</li><li>Eneagrama Personalizado</li>
+            <li>Breathwork Personalizado</li><li>Eneagrama para Parejas</li>
+          </ul>
+          <a class="link-cta" href="#contacto">Agenda tu sesi&oacute;n
+            <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <div class="emp-band" id="empresas">
+    <div class="emp-media" aria-hidden="true">
+      <video class="emp-video" autoplay muted loop playsinline preload="metadata"
+             poster="assets/web/video/bienestar-corporativo-poster.jpg">
+        <source src="assets/web/video/bienestar-corporativo-bg.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="emp-veil" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="emp-split">
+        <div class="emp-head">
+          <div class="linea-head sr-hidden">
+            <span class="linea-num" aria-hidden="true">02</span>
+            <div>
+              <h3>Para empresas &middot; Movimiento Vital</h3>
+              <p>Programas de bienestar, liderazgo y desarrollo humano para fortalecer la cultura de tu organizaci&oacute;n.</p>
+              <p style="margin-top:10px"><span class="todo claro">A confirmar &middot; nombre comercial &laquo;Movimiento Vital&raquo;</span></p>
+            </div>
+          </div>
+
+          <div class="emp-logos sr-hidden">
+            <div class="el-label">
+              <span class="t">Organizaciones y aliados</span>
+              <span class="todo claro">A confirmar &middot; r&oacute;tulo y lista definitiva</span>
+            </div>
+            <div class="mq">
+              <div class="mq-track" id="empTrack">
+            <img src="assets/web/logos/grafito/empresas/acodem.png" alt="Logo de ACODEM, organizaci&oacute;n aliada de Mujeres Vitales" loading="lazy">
+            <img src="assets/web/logos/grafito/empresas/acodem-2.png" alt="Logo de ACODEM, versi&oacute;n secundaria" loading="lazy">
+            <img src="assets/web/logos/grafito/empresas/activistas-constructivos.png" alt="Logo de Activistas Constructivos, organizaci&oacute;n aliada" loading="lazy">
+            <img src="assets/web/logos/grafito/empresas/acf-femenina.png" alt="Logo de ACF Femenina, organizaci&oacute;n aliada" loading="lazy">
+            <img src="assets/web/logos/grafito/empresas/colegio-terapeutas-hipnosis.png" alt="Logo del Colegio de Terapeutas de Hipnosis de Sanaci&oacute;n" loading="lazy">
+            <img src="assets/web/logos/grafito/empresas/diempaques.png" alt="Logo de Diempaques, empresa atendida por Movimiento Vital" loading="lazy">
+            <img src="assets/web/logos/grafito/empresas/dr-camilo-reyes.png" alt="Logo de Dr. Camilo Reyes, aliado de Mujeres Vitales" loading="lazy">
+            <img src="assets/web/logos/grafito/empresas/dr-escalante.png" alt="Logo de Dr. Escalante, aliado de Mujeres Vitales" loading="lazy">
+            <img src="assets/web/logos/grafito/empresas/elvira-mieles.png" alt="Logo de Elvira Mieles, aliada de Mujeres Vitales" loading="lazy">
+            <img src="assets/web/logos/grafito/empresas/fenicia-performance.png" alt="Logo de Fenicia Performance, empresa atendida por Movimiento Vital" loading="lazy">
+            <img src="assets/web/logos/grafito/empresas/fundacion-red.png" alt="Logo de Fundaci&oacute;n RED, organizaci&oacute;n aliada" loading="lazy">
+            <img src="assets/web/logos/grafito/empresas/holistic-spot.png" alt="Logo de Holistic Spot, aliado de Mujeres Vitales" loading="lazy">
+            <img src="assets/web/logos/grafito/empresas/liga-sida.png" alt="Logo de la Liga contra el Sida, organizaci&oacute;n aliada" loading="lazy">
+            <img src="assets/web/logos/grafito/empresas/newfield-network.png" alt="Logo de Newfield Network, organizaci&oacute;n aliada" loading="lazy">
+            <img src="assets/web/logos/grafito/empresas/peacemaker.png" alt="Logo de Peacemaker, organizaci&oacute;n aliada" loading="lazy">
+            <img src="assets/web/logos/grafito/empresas/poliempakes.png" alt="Logo de Poliempakes, empresa atendida por Movimiento Vital" loading="lazy">
+            <img src="assets/web/logos/grafito/empresas/rem.png" alt="Logo de REM, organizaci&oacute;n aliada" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="emp-steps" id="empSteps">
+        <div class="estep">
+          <span class="estep-num" aria-hidden="true">01</span>
+          <article class="prog-card">
+                    <div class="prog-media prog-media--foto">
+                      <img src="assets/web/programas/talleres-empresas.jpg" alt="Taller para empresas: equipo de colaboradoras y colaboradores con uniforme y gorros de trabajo, sonriendo con flores y globos al cierre de la actividad" loading="lazy">
+                    </div>
+                    <div class="prog-body">
+                      <h4>Talleres para Empresas</h4>
+                      <p>Talleres pr&aacute;cticos de bienestar, gesti&oacute;n emocional, comunicaci&oacute;n y autoconocimiento. Trabajamos con respiraci&oacute;n consciente, meditaci&oacute;n, trabajo som&aacute;tico y eneagrama para mejorar la din&aacute;mica de los equipos.</p>
+                      <a class="link-cta claro" href="https://www.mujeresvitales.com/talleres-para-empresas/" target="_blank" rel="noopener">Ver los talleres
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+                      </a>
+                    </div>
+                  </article>
+        </div>
+        <div class="estep">
+          <span class="estep-num" aria-hidden="true">02</span>
+          <article class="prog-card">
+                    <div class="prog-media prog-media--foto">
+                      <img src="assets/web/programas/charlas-empresas.jpg" alt="Charla para empresas: facilitadora de pie frente a un grupo de colaboradores sentados en un sal&oacute;n con ventanales al campo" loading="lazy">
+                    </div>
+                    <div class="prog-body">
+                      <h4>Charlas para Empresas</h4>
+                      <p>Charlas de empoderamiento y prop&oacute;sito para tus colaboradores: desarrollan conciencia, motivaci&oacute;n y habilidades blandas. Tambi&eacute;n dise&ntilde;amos charlas sobre temas espec&iacute;ficos de tu equipo.</p>
+                      <a class="link-cta claro" href="https://www.mujeresvitales.com/charlas-para-empresas/" target="_blank" rel="noopener">Ver las charlas
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+                      </a>
+                    </div>
+                  </article>
+        </div>
+        </div>
+      </div>
+
+      <div class="emp-close sr-hidden">
+        <p><span class="ec-hi">Servicios a la medida</span> en temas, estilos, tama&ntilde;os de grupo, duraci&oacute;n y objetivos.</p>
+        <a class="btn oro" href="#contacto">Solicita una propuesta</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-video" id="testimonios">
+  <div class="wrap">
+    <div class="center maxw sr-hidden">
+      <span class="eyebrow outline">Historias reales</span>
+      <h2>Ellas ya vivieron la experiencia</h2>
+      <p class="lead">Mujeres que decidieron detenerse, mirarse y volver a s&iacute; mismas. Esc&uacute;chalas contarlo con sus propias palabras.</p>
+    </div>
+
+    <div class="vid-rail sr-hidden">
+      <div class="vid-track" id="vidTrack" tabindex="0" role="region" aria-label="Carrusel de testimonios en video"></div>
+      <div class="vid-arrows">
+        <button class="vid-arrow" id="vidPrev" aria-label="Testimonios anteriores">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 5 8 12 15 19"/></svg>
+        </button>
+        <button class="vid-arrow" id="vidNext" aria-label="Testimonios siguientes">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 5 16 12 9 19"/></svg>
+        </button>
+      </div>
+      <p class="vid-hint">Desliza para ver m&aacute;s historias</p>
+      <span class="nota-conf" style="max-width:660px;margin:18px auto 0">A confirmar: nombre y programa de cada mujer, y si los videos se embeben desde Instagram o se suben al sitio.</span>
+    </div>
+
+    <div class="vid-cta sr-hidden">
+      <a class="btn" href="#contacto">Quiero vivir mi propia experiencia</a>
+    </div>
+  </div>
+</section>
+
+<div class="hdiv r"></div>
+
+<section class="sec sec-coaches" id="equipo">
+  <div class="wrap">
+    <div class="center maxw sr-hidden">
+      <span class="eyebrow">El equipo</span>
+      <h2>Nuestras coaches e invitadas especiales</h2>
+      <p class="lead">Un equipo de profesionales de distintas disciplinas que acompa&ntilde;a cada retiro, taller y sesi&oacute;n de Mujeres Vitales.</p>
+    </div>
+
+    <div class="coach-grid" id="coachGrid">
+      <article class="coach destaque sr-hidden">
+        <div class="coach-av">
+          <img src="assets/web/coaches/heli-quijano.jpg" width="400" height="400" loading="lazy" decoding="async"
+               alt="Retrato de Heli Quijano, creadora de Mujeres Vitales, sonriendo de frente">
+        </div>
+        <div class="coach-card">
+          <p class="cn">Heli Quijano</p>
+          <p class="ce">Creadora de Mujeres Vitales &middot; Coach Ontol&oacute;gica, Eneagramista, Danzaterapeuta y Facilitadora Breathwork</p>
+          <span class="todo">Pendiente &middot; retrato profesional</span>
+        </div>
+      </article>
+      <article class="coach sr-hidden">
+        <div class="coach-av">
+          <img src="assets/web/coaches/flavia-dossantos.jpg" width="400" height="400" loading="lazy" decoding="async"
+               alt="Retrato de Flavia Dossantos, coach del equipo de Mujeres Vitales">
+        </div>
+        <div class="coach-card">
+          <p class="cn">Flavia Dossantos</p>
+          <p class="ce">Especialidad pendiente</p>
+        </div>
+      </article>
+      <article class="coach sr-hidden">
+        <div class="coach-av">
+          <img src="assets/web/coaches/tuti-vargas.jpg" width="400" height="400" loading="lazy" decoding="async"
+               alt="Retrato de Tuti Vargas, coach del equipo de Mujeres Vitales">
+        </div>
+        <div class="coach-card">
+          <p class="cn">Tuti Vargas</p>
+          <p class="ce">Especialidad pendiente</p>
+          <span class="todo cav">Nombre a confirmar</span>
+        </div>
+      </article>
+      <article class="coach sr-hidden">
+        <div class="coach-av">
+          <img src="assets/web/coaches/valeria-debotas.jpg" width="400" height="400" loading="lazy" decoding="async"
+               alt="Retrato de Valeria Debotas, coach del equipo de Mujeres Vitales">
+        </div>
+        <div class="coach-card">
+          <p class="cn">Valeria Debotas</p>
+          <p class="ce">Especialidad pendiente</p>
+        </div>
+      </article>
+      <article class="coach sr-hidden">
+        <div class="coach-av">
+          <img src="assets/web/coaches/milena-lopez.jpg" width="400" height="400" loading="lazy" decoding="async"
+               alt="Retrato de Milena Lopez, coach del equipo de Mujeres Vitales">
+        </div>
+        <div class="coach-card">
+          <p class="cn">Milena L&oacute;pez</p>
+          <p class="ce">Especialidad pendiente</p>
+        </div>
+      </article>
+      <article class="coach sr-hidden">
+        <div class="coach-av">
+          <img src="assets/web/coaches/alexandra-santos.jpg" width="400" height="400" loading="lazy" decoding="async"
+               alt="Retrato de Alexandra Santos, coach del equipo de Mujeres Vitales">
+        </div>
+        <div class="coach-card">
+          <p class="cn">Alexandra Santos</p>
+          <p class="ce">Especialidad pendiente</p>
+        </div>
+      </article>
+      <article class="coach sr-hidden">
+        <div class="coach-av">
+          <img src="assets/web/coaches/andrea-garzon.jpg" width="400" height="400" loading="lazy" decoding="async"
+               alt="Retrato de Andrea Garzon, coach del equipo de Mujeres Vitales">
+        </div>
+        <div class="coach-card">
+          <p class="cn">Andrea Garz&oacute;n</p>
+          <p class="ce">Especialidad pendiente</p>
+        </div>
+      </article>
+      <article class="coach sr-hidden">
+        <div class="coach-av">
+          <img src="assets/web/coaches/caterine-escobar.jpg" width="400" height="400" loading="lazy" decoding="async"
+               alt="Retrato de Caterine Escobar, coach del equipo de Mujeres Vitales">
+        </div>
+        <div class="coach-card">
+          <p class="cn">Caterine Escobar</p>
+          <p class="ce">Especialidad pendiente</p>
+        </div>
+      </article>
+      <article class="coach sr-hidden">
+        <div class="coach-av">
+          <img src="assets/web/coaches/gigi-ramirez.jpg" width="400" height="400" loading="lazy" decoding="async"
+               alt="Retrato de Gigi Ramirez, coach del equipo de Mujeres Vitales">
+        </div>
+        <div class="coach-card">
+          <p class="cn">Gigi Ram&iacute;rez</p>
+          <p class="ce">Especialidad pendiente</p>
+          <span class="todo cav">Nombre a confirmar</span>
+        </div>
+      </article>
+      <article class="coach sr-hidden">
+        <div class="coach-av">
+          <img src="assets/web/coaches/pao-segura.jpg" width="400" height="400" loading="lazy" decoding="async"
+               alt="Retrato de Pao Segura, coach del equipo de Mujeres Vitales">
+        </div>
+        <div class="coach-card">
+          <p class="cn">Pao Segura</p>
+          <p class="ce">Especialidad pendiente</p>
+        </div>
+      </article>
+      <article class="coach sr-hidden">
+        <div class="coach-av">
+          <img src="assets/web/coaches/lisa-olea.jpg" width="400" height="400" loading="lazy" decoding="async"
+               alt="Retrato de Lisa Olea, coach del equipo de Mujeres Vitales">
+        </div>
+        <div class="coach-card">
+          <p class="cn">Lisa Olea</p>
+          <p class="ce">Especialidad pendiente</p>
+          <span class="todo cav">Nombre a confirmar</span>
+        </div>
+      </article>
+      <article class="coach sr-hidden">
+        <div class="coach-av">
+          <img src="assets/web/coaches/laura-mogollon.jpg" width="400" height="400" loading="lazy" decoding="async"
+               alt="Retrato de Laura Mogollon, coach del equipo de Mujeres Vitales">
+        </div>
+        <div class="coach-card">
+          <p class="cn">Laura Mogoll&oacute;n</p>
+          <p class="ce">Especialidad pendiente</p>
+        </div>
+      </article>
+      <article class="coach sr-hidden">
+        <div class="coach-av">
+          <img src="assets/web/coaches/sarai-diez.jpg" width="400" height="400" loading="lazy" decoding="async"
+               alt="Retrato de Sarai Diez, coach del equipo de Mujeres Vitales">
+        </div>
+        <div class="coach-card">
+          <p class="cn">Sarai Diez</p>
+          <p class="ce">Especialidad pendiente</p>
+        </div>
+      </article>
+      <article class="coach sr-hidden">
+        <div class="coach-av">
+          <img src="assets/web/coaches/vivi-echeverri.jpg" width="400" height="400" loading="lazy" decoding="async"
+               alt="Retrato de Vivi Echeverri, coach del equipo de Mujeres Vitales">
+        </div>
+        <div class="coach-card">
+          <p class="cn">Vivi Echeverri</p>
+          <p class="ce">Especialidad pendiente</p>
+        </div>
+      </article>
+      <article class="coach sr-hidden">
+        <div class="coach-av">
+          <img src="assets/web/coaches/valentina-castano.jpg" width="400" height="400" loading="lazy" decoding="async"
+               alt="Retrato de Valentina Castano, coach del equipo de Mujeres Vitales">
+        </div>
+        <div class="coach-card">
+          <p class="cn">Valentina Casta&ntilde;o</p>
+          <p class="ce">Especialidad pendiente</p>
+        </div>
+      </article>
+      <article class="coach sr-hidden">
+        <div class="coach-av">
+          <img src="assets/web/coaches/jeannete-rojas.jpg" width="400" height="400" loading="lazy" decoding="async"
+               alt="Retrato de Jeannete Rojas, coach del equipo de Mujeres Vitales">
+        </div>
+        <div class="coach-card">
+          <p class="cn">Jeannete Rojas</p>
+          <p class="ce">Especialidad pendiente</p>
+        </div>
+      </article>
+      <article class="coach sr-hidden">
+        <div class="coach-av">
+          <img src="assets/web/coaches/majo-rios.jpg" width="400" height="400" loading="lazy" decoding="async"
+               alt="Retrato de Majo Rios, coach del equipo de Mujeres Vitales">
+        </div>
+        <div class="coach-card">
+          <p class="cn">Majo Rios</p>
+          <p class="ce">Especialidad pendiente</p>
+        </div>
+      </article>
+      <article class="coach sr-hidden">
+        <div class="coach-av">
+          <img src="assets/web/coaches/nathalia-ocampo.jpg" width="400" height="400" loading="lazy" decoding="async"
+               alt="Retrato de Nathalia Ocampo, coach del equipo de Mujeres Vitales">
+        </div>
+        <div class="coach-card">
+          <p class="cn">Nathalia Ocampo</p>
+          <p class="ce">Especialidad pendiente</p>
+          <span class="todo cav">Nombre a confirmar</span>
+        </div>
+      </article>
+      <article class="coach sr-hidden">
+        <div class="coach-av">
+          <img src="assets/web/coaches/carolina-jimenez.jpg" width="400" height="400" loading="lazy" decoding="async"
+               alt="Retrato de Carolina Jimenez, coach del equipo de Mujeres Vitales">
+        </div>
+        <div class="coach-card">
+          <p class="cn">Carolina Jim&eacute;nez</p>
+          <p class="ce">Especialidad pendiente</p>
+        </div>
+      </article>
+    </div>
+
+    <p class="center" style="margin-top:24px">
+      <span class="todo conf">A confirmar &middot; especialidad (m&aacute;x. 8 palabras) y ortograf&iacute;a de cada nombre</span>
+    </p>
+
+    <div class="coach-cta sr-hidden">
+      <a class="link-cta" href="#" data-pend="1" title="Enlace pendiente &middot; p&aacute;gina a&uacute;n no definida en el rediseno">Conoce al equipo completo
+        <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+      </a>
+      <p style="margin-top:12px"><span class="todo conf">Pendiente &middot; p&aacute;gina del equipo completo</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-final" id="contacto">
+  <div class="fin-media" aria-hidden="true">
+    <img src="assets/web/circulo-nocturno-playa-blanco.jpg" alt="" loading="lazy">
+  </div>
+  <div class="cc-divider" aria-hidden="true">
+    <svg class="cc-curve" viewBox="0 0 1440 46" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,0 L600,0 C660,0 690,46 720,46 C750,46 780,0 840,0 L1440,0 L1440,0 L0,0 Z" fill="#efdfcd"/>
+    </svg>
+    <span class="cc-circle">
+      <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 10 12 16 18 10"/></svg>
+    </span>
+  </div>
+  <div class="wrap">
+    <div class="final-card sr-hidden">
+      <div class="final-inner">
+      <span class="eyebrow oro">Contacto</span>
+      <h2>Acompa&ntilde;amos tu proceso de transformaci&oacute;n en Colombia.</h2>
+      <p class="lead">Retiros, talleres, rituales y sesiones 1 a 1 para mujeres, y programas de bienestar para empresas.</p>
+      <div class="final-btns">
+        <a class="btn claro" href="#personas">Agenda una sesi&oacute;n</a>
+        <a class="btn ghost" href="#empresas">Conoce nuestros programas para empresas</a>
+      </div>
+      <p class="final-micro">Inicia hoy tu entrevista gratis.</p>
+      <p style="margin-top:18px"><span class="todo claro">Pendiente &middot; n&uacute;mero de WhatsApp oficial para todos los CTA</span></p>
+      <span class="nota-conf claro">A confirmar &middot; el bloque de cierre no consta en la copy. El titular y el apoyo se tomaron del meta title y la meta description aprobados.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <img src="assets/web/logos/logo-mujeres-vitales-blanco.png" alt="Logo de Mujeres Vitales en blanco" loading="lazy">
+        <p>Somos una empresa de transformaci&oacute;n humana y bienestar integral enfocada 100% en las mujeres, con soluciones para personas y para organizaciones.</p>
+      </div>
+      <div class="f-col">
+        <h5>Personas</h5>
+        <a href="#personas">Retiros</a>
+        <a href="#personas">Talleres</a>
+        <a href="#personas">Rituales Blessing Way</a>
+        <a href="#personas">Sesiones 1:1</a>
+        <a href="#personas">Mentor&iacute;a Mujer Vital</a>
+        <a href="#personas">Certificaci&oacute;n Mentora Mujer Vital</a>
+      </div>
+      <div class="f-col">
+        <h5>Empresas</h5>
+        <a href="#empresas">Movimiento Vital</a>
+        <a href="#empresas">Talleres para Empresas</a>
+        <a href="#empresas">Charlas para Empresas</a>
+        <a href="#contacto">Solicita una propuesta</a>
+      </div>
+      <div class="f-col">
+        <h5>Nosotros</h5>
+        <a href="#que-es">Mujeres Vitales</a>
+        <a href="https://www.mujeresvitales.com/teoria-de-la-vitalidad/" target="_blank" rel="noopener">Teor&iacute;a de la Vitalidad</a>
+        <a href="#equipo">Nuestras coaches</a>
+        <a href="#" data-pend="1" title="Enlace pendiente &middot; p&aacute;gina a&uacute;n no definida en el rediseno">Blog</a>
+        <a href="#contacto">Contacto</a>
+        <span class="fi"><span class="todo claro">Pendiente &middot; datos de contacto</span></span>
+        <span class="fi"><span class="todo claro">A confirmar &middot; &iacute;tem &laquo;Productos&raquo; del men&uacute; actual</span></span>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span>&copy; 2026 Mujeres Vitales. Todos los derechos reservados.</span>
+      <span>mujeresvitales.com</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="#contacto" aria-label="Hablar con una asesora">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.16c-.24.68-1.4 1.3-1.94 1.35-.5.05-.98.23-3.3-.69-2.78-1.1-4.55-3.94-4.69-4.12-.14-.18-1.12-1.49-1.12-2.85 0-1.36.71-2.02.96-2.3.25-.28.55-.35.73-.35h.53c.17 0 .4-.06.63.48.24.57.8 1.97.87 2.11.07.14.12.31.02.49-.09.18-.14.29-.28.45-.14.16-.3.35-.42.47-.14.14-.29.29-.12.57.16.28.72 1.19 1.55 1.93 1.07.95 1.97 1.25 2.25 1.39.28.14.44.12.6-.07.17-.19.7-.81.88-1.09.18-.28.36-.23.61-.14.25.09 1.6.75 1.87.89.28.14.46.21.53.32.07.12.07.66-.17 1.34z"/></svg>
+  Hablar con una asesora
+</a>
+
+<script>
+(function(){
+  "use strict";
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var each = function(list, fn){ Array.prototype.forEach.call(list, fn); };
+
+  /* ---------- Carrusel del hero ---------- */
+  var hero   = document.getElementById("hero"),
+      view   = document.getElementById("heroView"),
+      slides = view.querySelectorAll(".hslide"),
+      dots   = [].slice.call(document.querySelectorAll("#heroDots .hdot")),
+      idx = 0, DELAY = 7000, timer = null, userPaused = false;
+
+  function render(){
+    for(var i=0;i<slides.length;i++){
+      var on = (i === idx);
+      slides[i].classList.toggle("is-active", on);
+      slides[i].setAttribute("aria-hidden", on ? "false" : "true");
+      dots[i].setAttribute("aria-selected", on ? "true" : "false");
+      if(!on){
+        var off = dots[i].firstElementChild;
+        off.style.transition = "none";
+        off.style.width = "0";
+      }
+    }
+    if(!reduce && !userPaused){
+      var b = dots[idx].firstElementChild;
+      b.style.transition = "none";
+      b.style.width = "0";
+      void b.offsetWidth;
+      b.style.transition = "";
+      b.style.width = "";
+    }
+  }
+  function goTo(n){ idx = (n + slides.length) % slides.length; render(); restart(); }
+  function next(){ goTo(idx + 1); }
+  function prev(){ goTo(idx - 1); }
+  function pause(){ if(timer){ clearInterval(timer); timer = null; } }
+  function restart(){ pause(); if(reduce || userPaused) return; timer = setInterval(next, DELAY); }
+
+  document.getElementById("heroNext").addEventListener("click", next);
+  document.getElementById("heroPrev").addEventListener("click", prev);
+  dots.forEach(function(d,i){ d.addEventListener("click", function(){ goTo(i); }); });
+
+  view.addEventListener("mouseenter", pause);
+  view.addEventListener("mouseleave", function(){ if(!userPaused) restart(); });
+  view.addEventListener("focusin", pause);
+  view.addEventListener("focusout", function(e){
+    if(!userPaused && !view.contains(e.relatedTarget)) restart();
+  });
+  document.addEventListener("visibilitychange", function(){
+    if(document.hidden){ pause(); } else if(!userPaused){ restart(); }
+  });
+  hero.addEventListener("keydown", function(e){
+    if(e.key === "ArrowRight"){ e.preventDefault(); next(); }
+    if(e.key === "ArrowLeft"){ e.preventDefault(); prev(); }
+  });
+
+  var tx = 0, ty = 0;
+  view.addEventListener("touchstart", function(e){
+    tx = e.changedTouches[0].clientX; ty = e.changedTouches[0].clientY; pause();
+  }, {passive:true});
+  view.addEventListener("touchend", function(e){
+    var dx = e.changedTouches[0].clientX - tx, dy = e.changedTouches[0].clientY - ty;
+    if(Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy) * 1.3){ if(dx < 0){ next(); } else { prev(); } }
+    else if(!userPaused){ restart(); }
+  }, {passive:true});
+
+  render();
+  restart();
+
+  /* ---------- Cintas infinitas ---------- */
+  ["certTrack","empTrack"].forEach(function(id){
+    var t = document.getElementById(id);
+    if(!t) return;
+    var original = t.children.length;
+    /* Sem animacao a cinta vira grade estatica: clonar mostraria cada logo duas vezes. */
+    for(var i=0; !reduce && i<original; i++){
+      var clone = t.children[i].cloneNode(true);
+      clone.setAttribute("aria-hidden","true");
+      each(clone.querySelectorAll("img"), function(im){ im.setAttribute("alt",""); });
+      if(clone.tagName === "IMG"){ clone.setAttribute("alt",""); }
+      t.appendChild(clone);
+    }
+
+    /* Os logos ficam fora da viewport na horizontal: o lazy loading nativo
+       so dispara quando ja entraram na cinta, o que deixa buracos em branco.
+       Ao chegar a faixa na tela, carrega todos de uma vez. */
+    function carregarLogos(){
+      each(t.querySelectorAll('img[loading="lazy"]'), function(im){ im.loading = "eager"; });
+    }
+    var faixa = t.closest(".mq") || t;
+    if("IntersectionObserver" in window){
+      var ioMq = new IntersectionObserver(function(ents){
+        ents.forEach(function(en){
+          if(en.isIntersecting){ carregarLogos(); ioMq.disconnect(); }
+        });
+      }, {rootMargin:"300px 0px"});
+      ioMq.observe(faixa);
+    } else { carregarLogos(); }
+  });
+
+  /* ---------- Testimonios en video (facade do YouTube) ----------
+     So a miniatura carrega no inicio. O iframe entra no clique: 6 embeds de uma vez
+     custariam ~1,5 MB e varias requisicoes de terceiros antes do primeiro scroll. */
+  var vt = document.getElementById("vidTrack");
+  var YT_IDS = ["t28GyC7BbRw","tVSvQ8WUTak","Zk82la761-I","0-rBvvOMaxE","L3-MawliOKQ","BjqqpUFkWAA"];
+  var vHtml = "";
+  YT_IDS.forEach(function(id, k){
+    vHtml += '<div class="vid-item"><div class="vid-card">' +
+      '<button class="vid-facade" type="button" data-yt="' + id + '" ' +
+        'aria-label="Reproducir el testimonio ' + (k+1) + ' de ' + YT_IDS.length + '">' +
+        '<img src="https://i.ytimg.com/vi/' + id + '/hqdefault.jpg" alt="" loading="lazy" ' +
+             'width="480" height="360" referrerpolicy="no-referrer">' +
+        '<span class="vp" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="7,4 20,12 7,20"/></svg></span>' +
+      '</button>' +
+      '<span class="vtag"><b>Nombre</b>Programa que vivi&oacute;' +
+        '<span class="todo claro">A confirmar &middot; nombre y programa</span></span>' +
+      '</div></div>';
+  });
+  vt.innerHTML = vHtml;
+
+  /* r4: o embed do YouTube exige origin http(s). Aberto por file:// o player
+     devolve "Erro 153 - erro de configuracao do player" em TODOS os videos, e nao
+     ha configuracao que resolva: em file:// o clique manda direto para o YouTube.
+     Servido por http(s) entra o player de verdade, pela IFrame API, que avisa por
+     onError quando o dono desativou a reproducao fora do YouTube (101/150). Nesse
+     caso o facade volta com o selo "Ver en YouTube" e o clique abre em nova aba --
+     em nenhum cenario sobra tela preta de erro dentro do card. */
+  var vFile = location.protocol === "file:";
+  var vApi = null;
+  function carregarApiYT(){
+    if(vApi) return vApi;
+    vApi = new Promise(function(pronto){
+      if(window.YT && window.YT.Player) return pronto();
+      var antes = window.onYouTubeIframeAPIReady;
+      window.onYouTubeIframeAPIReady = function(){ if(antes) antes(); pronto(); };
+      var s = document.createElement("script");
+      s.src = "https://www.youtube.com/iframe_api";
+      document.head.appendChild(s);
+    });
+    return vApi;
+  }
+  function abrirNoYouTube(id){
+    window.open("https://www.youtube.com/watch?v=" + id, "_blank", "noopener");
+  }
+  function marcarExterno(card, id){
+    card.classList.remove("is-live");
+    card.classList.add("vid-ext");
+    card.setAttribute("data-ext", "1");
+    if(!card.querySelector(".vid-ext-tag")){
+      var t = document.createElement("span");
+      t.className = "vid-ext-tag";
+      t.textContent = "Ver en YouTube";
+      card.appendChild(t);
+    }
+  }
+  each(vt.querySelectorAll(".vid-facade"), function(b){
+    var card = b.parentNode, montando = false;
+    b.addEventListener("click", function(){
+      var id = b.getAttribute("data-yt");
+      if(vFile || card.getAttribute("data-ext") === "1"){ abrirNoYouTube(id); return; }
+      if(montando) return;
+      montando = true;
+      var alvo = document.createElement("div");
+      card.appendChild(alvo);
+      carregarApiYT().then(function(){
+        var pl = new window.YT.Player(alvo, {
+          videoId: id,
+          host: "https://www.youtube-nocookie.com",
+          playerVars: {autoplay:1, rel:0, modestbranding:1, playsinline:1, origin: location.origin},
+          events: {
+            onReady: function(e){
+              var f = pl.getIframe && pl.getIframe();
+              if(f){
+                f.title = "Testimonio en video de una participante de Mujeres Vitales";
+                f.setAttribute("allowfullscreen", "");
+              }
+              e.target.playVideo();
+            },
+            onStateChange: function(e){
+              /* 1 = reproduzindo, 3 = carregando o buffer: so entao o facade sai */
+              if(e.data === 1 || e.data === 3) card.classList.add("is-live");
+            },
+            onError: function(){
+              var f = pl.getIframe && pl.getIframe();
+              if(f && f.parentNode) f.parentNode.removeChild(f);
+              if(alvo.parentNode) alvo.parentNode.removeChild(alvo);
+              montando = false;
+              marcarExterno(card, id);
+              abrirNoYouTube(id);
+            }
+          }
+        });
+      });
+    });
+  });
+
+  function vStep(){
+    var item = vt.querySelector(".vid-item");
+    return item ? item.getBoundingClientRect().width + 20 : 260;
+  }
+  document.getElementById("vidNext").addEventListener("click", function(){
+    vt.scrollBy({left: vStep(), behavior: reduce ? "auto" : "smooth"});
+  });
+  document.getElementById("vidPrev").addEventListener("click", function(){
+    vt.scrollBy({left: -vStep(), behavior: reduce ? "auto" : "smooth"});
+  });
+  var vPrev = document.getElementById("vidPrev"), vNext = document.getElementById("vidNext");
+  function vSync(){
+    var max = vt.scrollWidth - vt.clientWidth;
+    vPrev.disabled = vt.scrollLeft <= 2;
+    vNext.disabled = vt.scrollLeft >= max - 2;
+  }
+  vt.addEventListener("scroll", vSync, {passive:true});
+  window.addEventListener("resize", vSync);
+  vSync();
+
+  each(document.querySelectorAll("a[data-pend]"), function(a){
+    a.addEventListener("click", function(e){ e.preventDefault(); });
+  });
+
+  vt.addEventListener("keydown", function(e){
+    if(e.key === "ArrowRight"){ e.preventDefault(); vt.scrollBy({left: vStep(), behavior:"smooth"}); }
+    if(e.key === "ArrowLeft"){ e.preventDefault(); vt.scrollBy({left: -vStep(), behavior:"smooth"}); }
+  });
+
+  /* ---------- Resenas de Google: carrossel proprio ----------
+     Os textos e as datas sao os reais do perfil (site-atual/google-reviews.json).
+     No WordPress este bloco vira o widget oficial: nota e total ficam dinamicos. */
+  (function(){
+    var gt = document.getElementById("grTrack");
+    if(!gt) return;
+    var cards = gt.querySelectorAll(".gr-card");
+
+    /* "hace N meses" recalculado no cliente para o preview nao envelhecer */
+    function relativo(iso){
+      var p = iso.split("-");
+      var dias = Math.floor((Date.now() - Date.UTC(+p[0], +p[1]-1, +p[2], 12)) / 86400000);
+      if(dias < 1) return "hoy";
+      if(dias < 7) return "hace " + dias + (dias === 1 ? " d\u00eda" : " d\u00edas");
+      if(dias < 30){ var sem = Math.floor(dias/7); return "hace " + sem + (sem === 1 ? " semana" : " semanas"); }
+      if(dias < 365){ var m = Math.max(1, Math.min(11, Math.round(dias/30.44))); return "hace " + m + (m === 1 ? " mes" : " meses"); }
+      var a = Math.floor(dias/365.25); return "hace " + a + (a === 1 ? " a\u00f1o" : " a\u00f1os");
+    }
+    each(gt.querySelectorAll(".gr-when"), function(el){
+      var iso = el.getAttribute("data-date");
+      if(iso) el.textContent = relativo(iso);
+    });
+
+    /* "Leer mas": so entra no card cujo texto realmente estoura o clamp */
+    function montarBotoes(){
+      each(cards, function(card){
+        if(card.classList.contains("is-open")) return;
+        var txt = card.querySelector(".gr-txt"), bt = card.querySelector(".gr-more");
+        var estoura = txt.scrollHeight > txt.clientHeight + 2;
+        if(estoura && !bt){
+          bt = document.createElement("button");
+          bt.type = "button";
+          bt.className = "gr-more";
+          bt.textContent = "Leer m\u00e1s";
+          bt.setAttribute("aria-expanded", "false");
+          bt.addEventListener("click", function(){
+            var abre = !card.classList.contains("is-open");
+            card.classList.toggle("is-open", abre);
+            bt.textContent = abre ? "Leer menos" : "Leer m\u00e1s";
+            bt.setAttribute("aria-expanded", abre ? "true" : "false");
+            grSync();
+          });
+          card.insertBefore(bt, card.querySelector(".gr-ver"));
+        } else if(!estoura && bt){
+          bt.parentNode.removeChild(bt);
+        }
+      });
+    }
+    montarBotoes();
+    window.addEventListener("load", montarBotoes);
+    if(document.fonts && document.fonts.ready) document.fonts.ready.then(montarBotoes);
+
+    /* setas + swipe nativo (overflow-x) */
+    function grPasso(){
+      var it = gt.querySelector(".gr-item");
+      return it ? it.getBoundingClientRect().width + 20 : 300;
+    }
+    var gPrev = document.getElementById("grPrev"), gNext = document.getElementById("grNext");
+    function grSync(){
+      /* o scroll-snap para no inicio do primeiro card, ou seja no padding-left da
+         pista: sem essa tolerancia a seta "anterior" nasce habilitada sem ter para onde ir */
+      var pad = parseFloat(getComputedStyle(gt).paddingLeft) || 0;
+      var max = gt.scrollWidth - gt.clientWidth;
+      gPrev.disabled = gt.scrollLeft <= pad + 2;
+      gNext.disabled = gt.scrollLeft >= max - 2;
+      /* r4: o fade so aparece na ponta que ainda tem para onde rolar */
+      var fade = window.matchMedia("(max-width:640px)").matches ? 40 : 64;
+      gt.style.setProperty("--fadeL", (gt.scrollLeft > pad + 2 ? fade : 0) + "px");
+      gt.style.setProperty("--fadeR", (gt.scrollLeft < max - 2 ? fade : 0) + "px");
+    }
+    gNext.addEventListener("click", function(){ gt.scrollBy({left: grPasso(), behavior: reduce ? "auto" : "smooth"}); });
+    gPrev.addEventListener("click", function(){ gt.scrollBy({left: -grPasso(), behavior: reduce ? "auto" : "smooth"}); });
+    gt.addEventListener("scroll", grSync, {passive:true});
+    window.addEventListener("resize", function(){ grSync(); montarBotoes(); });
+    gt.addEventListener("keydown", function(e){
+      if(e.key === "ArrowRight"){ e.preventDefault(); gt.scrollBy({left: grPasso(), behavior:"smooth"}); }
+      if(e.key === "ArrowLeft"){ e.preventDefault(); gt.scrollBy({left: -grPasso(), behavior:"smooth"}); }
+    });
+    grSync();
+  })();
+
+  /* ---------- Timeline de empresas: linha preenche no scroll + steps em stagger ---------- */
+  (function(){
+    var tl = document.getElementById("empSteps");
+    if(!tl) return;
+    var steps = tl.querySelectorAll(".estep");
+    if(reduce){
+      tl.style.setProperty("--fill","1");
+      each(steps, function(st){ st.classList.add("show"); });
+      return;
+    }
+    /* O reveal sai do mesmo handler que preenche a linha: um IntersectionObserver
+       nao dispara de forma confiavel neste bloco (o elemento e mais alto que a viewport). */
+    var revelado = false;
+    var tlTick = false;
+    function tlUpdate(){
+      tlTick = false;
+      var r = tl.getBoundingClientRect(), vh = window.innerHeight || document.documentElement.clientHeight;
+      var ini = vh * .80, fim = vh * .40;
+      var f = (ini - r.top) / ((ini - fim) + r.height);
+      tl.style.setProperty("--fill", Math.max(0, Math.min(1, f)).toFixed(4));
+      if(!revelado && r.top < vh * .92 && r.bottom > 0){
+        revelado = true;
+        each(steps, function(st,i){ setTimeout(function(){ st.classList.add("show"); }, i*170); });
+      }
+    }
+    function tlScroll(){ if(!tlTick){ tlTick = true; requestAnimationFrame(tlUpdate); } }
+    window.addEventListener("scroll", tlScroll, {passive:true});
+    window.addEventListener("resize", tlScroll, {passive:true});
+    tlUpdate();
+  })();
+
+  /* ---------- Video de fundo de empresas ----------
+     Fundo ambiente: para quem pediu menos movimento, congela no poster. */
+  (function(){
+    var v = document.querySelector(".emp-video");
+    if(!v) return;
+    if(reduce){ v.removeAttribute("autoplay"); v.pause(); return; }
+    var play = function(){ var pr = v.play(); if(pr && pr.catch) pr.catch(function(){}); };
+    if("IntersectionObserver" in window){
+      new IntersectionObserver(function(ents){
+        ents.forEach(function(en){ if(en.isIntersecting){ play(); } else { v.pause(); } });
+      }, {rootMargin:"200px 0px"}).observe(v);
+    } else { play(); }
+  })();
+
+  /* ---------- Scroll reveal ---------- */
+  if("IntersectionObserver" in window && !reduce){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add("sr-visible"); io.unobserve(en.target); }
+      });
+    }, {rootMargin:"0px 0px -8% 0px", threshold:.06});
+    each(document.querySelectorAll(".sr-hidden"), function(el){ io.observe(el); });
+
+    /* Rede de seguranca: em scroll rapido o observer pode nao disparar.
+       Varre o que sobrou e revela tudo que ja passou pela viewport. */
+    var ticking = false;
+    function sweep(){
+      ticking = false;
+      var resto = document.querySelectorAll(".sr-hidden:not(.sr-visible)");
+      if(!resto.length){
+        window.removeEventListener("scroll", onSweep);
+        window.removeEventListener("resize", onSweep);
+        return;
+      }
+      each(resto, function(el){
+        if(el.getBoundingClientRect().top < window.innerHeight - 20){
+          el.classList.add("sr-visible");
+          io.unobserve(el);
+        }
+      });
+    }
+    function onSweep(){
+      if(ticking) return;
+      ticking = true;
+      requestAnimationFrame(sweep);
+    }
+    window.addEventListener("scroll", onSweep, {passive:true});
+    window.addEventListener("resize", onSweep);
+  } else {
+    each(document.querySelectorAll(".sr-hidden"), function(el){ el.classList.add("sr-visible"); });
+  }
+})();
+</script>
+</body>
+</html>
