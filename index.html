@@ -675,6 +675,53 @@ footer .fdis{color:rgba(247,240,234,.62)}
   .hero .hero-media.sr-hidden{transform:scale(.9)!important}
 }
 /* ==================== fim R10.3 ==================== */
+/* ==================== R11 (ronda 11 - hero: 2 ajustes do Elton) ====================
+   R11.1 ESTRUTURA (base dos dois itens): o pill e o h1 sairam do .hero-head (que ficou
+   somente com a logo) para o .hero-headline, PRIMEIRO item do .hero-grid. Com isso o h1 e
+   os paragrafos passam a ser a MESMA coluna do grid e o .hero-media ocupa as duas linhas
+   (grid-row:1/span 2 + align-self:center) -> centro vertical EXATO em qualquer largura,
+   sem numero magico e sem JS. Antes o h1 vivia fora do grid, e o media so podia centralizar
+   na altura dos paragrafos -- de onde vinha o desalinhamento de ~153px @1440.
+   Os seletores antigos (.hero .hero-head .hero-pill / .h1-sub das R9.1/R10.1) deixam de casar:
+   tudo o que eles definiam esta re-declarado aqui com a MESMA especificidade (3 classes). */
+.hero .hero-head{margin-bottom:0}          /* o gap agora e a margem da propria logo (26px/18px) */
+.hero .hero-headline{text-align:center}
+.hero .hero-headline .hero-pill{margin:0 0 20px}
+.hero .hero-headline .h1-sub{margin:0;max-width:840px;font-size:clamp(23px,3.3vw,40px);text-wrap:balance}
+/* delays da sequencia de carga (eram .hero-head .hero-pill / .hero-head .h1-sub) */
+.hero .hero-headline .hero-pill.sr-hidden{transition-delay:.2s}
+.hero .hero-headline .h1-sub.sr-hidden{transition-delay:.34s}
+@media(min-width:961px){
+  .hero .hero-headline{grid-column:1;grid-row:1;text-align:left}
+  .hero .hero-copy{grid-column:1;grid-row:2}
+  .hero .hero-media{grid-column:2;grid-row:1/span 2;align-self:center}
+  /* R11 ITEM 1: espaco promessa (h1) -> subpromessa (paragrafos) 54px -> 27px (-50%).
+     Era o margin-bottom do .hero-head; agora e o row-gap do grid. O column-gap segue
+     54px, entao a largura das colunas (e do h1) fica identica a da R10. */
+  .hero-grid{row-gap:27px;column-gap:54px}
+}
+@media(max-width:960px){
+  /* empilhado (headline -> media -> copy): espacos identicos a R10 -- 54px h1->media e
+     44px media->copy -- declarados como margem, nao como row-gap. */
+  .hero-grid{row-gap:0;column-gap:44px}
+  .hero .hero-headline{order:-2;margin-bottom:54px}
+  .hero .hero-media{margin-bottom:44px}
+}
+@media(max-width:600px){.hero .hero-headline{margin-bottom:36px}}
+/* R11 ITEM 2b: VSL mais alto. O cluster inteiro passa a derivar de --vslw (largura do video):
+   rings 1.3x e 1.5667x, glow 1.4x (= 390/470/420 sobre os 300px de hoje), e o SVG do orbit
+   escala junto (viewBox fixo -> o textPath mantem a MESMA proporcao de preenchimento do
+   circulo, so maior). 25vw entre 1200px e 1440px: 300px -> 360px (video 375px -> 450px de
+   altura). Teto de 360px porque o circulo externo (564px) para a 14px do box do h1 e nao
+   invade o texto da esquerda; abaixo de 1200px o clamp devolve os 300px de hoje (em 1024px
+   o circulo de 470px ja tangencia a borda da viewport -- crescer ali cortaria o textPath). */
+.hero-media{--vslw:clamp(300px,25vw,360px)}
+.vsl{width:var(--vslw)}
+.hero-media .r1{width:calc(var(--vslw)*1.3);height:calc(var(--vslw)*1.3)}
+.hero-media .r2{width:calc(var(--vslw)*1.5667);height:calc(var(--vslw)*1.5667)}
+.hero-media .orb-glow{width:calc(var(--vslw)*1.4);height:calc(var(--vslw)*1.4)}
+.hero-media .orbit-curve{width:calc(var(--vslw)*1.5667);height:calc(var(--vslw)*1.5667)}
+/* ==================== fim R11 ==================== */
 </style>
 </head>
 <body>
@@ -683,10 +730,12 @@ footer .fdis{color:rgba(247,240,234,.62)}
   <span class="sparkle" style="bottom:90px;left:6%;font-size:16px;">&#10022;</span>
   <div class="wrap hero-head">
     <img class="hero-logo sr-hidden" src="assets/web/logo-registro-white.png" alt="Mujeres Vitales - Método VITAL">
-    <span class="hero-pill sr-hidden sr-up">Volver a Vivir no es un retiro.</span>
-    <h1 class="h1-sub sr-hidden sr-up">Es un viaje de transformación profundo y vivencial para volver a la mujer que siempre has sido.</h1>
   </div>
   <div class="wrap hero-grid">
+    <div class="hero-headline">
+      <span class="hero-pill sr-hidden sr-up">Volver a Vivir no es un retiro.</span>
+      <h1 class="h1-sub sr-hidden sr-up">Es un viaje de transformación profundo y vivencial para volver a la mujer que siempre has sido.</h1>
+    </div>
     <div class="hero-copy sr-hidden sr-l">
       <p class="lead">Durante <strong>4 días y 3 noches</strong> vivirás una experiencia profunda en medio de la <strong>Sierra Nevada de Santa Marta</strong>, diseñada para ayudarte a comprender tu historia, sanar emocionalmente, reconectar con tu energía vital y regresar a tu vida con una nueva forma de habitarte.</p>
       <p class="lead">A través de nuestro <strong>Método VITAL</strong>, recorrerás un proceso de autoconocimiento, sanación e integración que te permitirá dejar de sobrevivir para comenzar a vivir desde tu autenticidad.</p>
