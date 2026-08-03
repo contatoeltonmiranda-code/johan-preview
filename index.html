@@ -722,6 +722,40 @@ footer .fdis{color:rgba(247,240,234,.62)}
 .hero-media .orb-glow{width:calc(var(--vslw)*1.4);height:calc(var(--vslw)*1.4)}
 .hero-media .orbit-curve{width:calc(var(--vslw)*1.5667);height:calc(var(--vslw)*1.5667)}
 /* ==================== fim R11 ==================== */
+/* ============ MOBILE-ONLY (<=600px): bg do hero + respiro acima da logo ============
+   Tudo aqui vive dentro da media query: >=601px (tablet, 768, 901, 1024, 1440) nao muda 1px.
+
+   1) BACKGROUND: assets/web/mobile.png so no mobile (desktop segue com bg-hero.jpg).
+      A imagem e 1080x2800 (aspect .386) e o hero mobile e MUITO mais estreito que isso
+      (390 / ~2000 = .19), entao com `cover` a escala seria max(W/1080, H/2800) = H/2800
+      -> a imagem ficaria ~2x mais larga que a viewport e perderia ~25% de cada lado,
+      cortando as fotos do topo (o circulo de mulheres a esquerda e a mulher sentada a
+      direita). Por isso a escala e pela LARGURA (background-size:100% auto), ancorada no
+      topo: as fotos aparecem INTEIRAS, sem corte lateral, em qualquer largura.
+      Emenda invisivel: a imagem e vinho chapado #86313F (= --vino, exatamente o
+      background-color do .hero) da linha 917 ate a 2800, entao onde a imagem acaba o
+      background-color continua sem degrau de cor.
+      !important: o parallax (data-parallax) escreve background-size/background-position
+      INLINE no .hero; declaracao !important de folha vence style inline sem !important.
+      Desktop nao tem !important nenhum -> parallax intacto la.
+
+   2) .hero::before (circulo radial branco de 520px em top:-12% right:-8%) desligado no
+      mobile: cai em cima da foto da direita e lava o rosto. O .hero::after (barra clara
+      no rodape da secao) fica -- ali embaixo o fundo ja e vinho chapado.
+
+   3) padding-top 70px -> 200px, para a logo cair abaixo da faixa de fotos. Medido:
+      topo da secao .hero -> topo do box da .hero-logo = 200px. Nao ha colapso de margem
+      no topo (o .hero tem padding-top, e .hero-head e .hero-logo tem margin-top 0). */
+@media(max-width:600px){
+  .hero{
+    padding-top:200px;
+    background-image:url(assets/web/mobile.png);
+    background-size:100% auto!important;
+    background-position:center top!important;
+    background-repeat:no-repeat;
+  }
+  .hero::before{display:none}
+}
 </style>
 </head>
 <body>
